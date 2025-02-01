@@ -29,6 +29,7 @@ author:
   employer         : "UNC Charlotte"
   uri              : "https://thearkaprava.github.io"
   email            : "asinha13[at]charlotte[dot]edu" 
+  cv               : "files/Arkaprava_Sinha_CV.pdf"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -119,7 +120,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # changed from false to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -352,3 +353,7 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Remove or disable footer-related settings
+footer:
+  links: []    # Empty the footer links array

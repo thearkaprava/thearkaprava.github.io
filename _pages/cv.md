@@ -9,30 +9,33 @@ redirect_from:
 
 {% include base_path %}
 
+<div style="margin-bottom: 2em; text-align: center;">
+  <span style="font-size: 1.2em; margin-right: 10px;">Download the latest Resume</span>
+  <a href="{{ base_path }}/files/Arkaprava_Sinha_CV.pdf" target="_blank" 
+     style="display: inline-block; vertical-align: middle;">
+    <i class="fas fa-file-pdf" style="font-size: 1.4em; color: #4a6cf7; 
+       transition: all 0.3s ease;"></i>
+  </a>
+</div>
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Computer Vision, University of North Carolina, Charlotte, 2028 (expected)
+* M.S. in Data Science, Chennai Mathematical Institute, 2020
+* B.Sc. in Computer Science and Engineering, University of Calcutta, 2018
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
+* Accenture AI, Data Scientist, 2021-2023
   * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
 
-* Fall 2015: Research Assistant
+* Larsen & Toubro Infotech, Data Scientist, 2020-2021
   * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
 
-* Summer 2015: Research Assistant
+* Teradata, Data Science Intern, 2019
   * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
   
-Skills
+<!-- Skills
 ======
 * Skill 1
 * Skill 2
@@ -61,4 +64,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->

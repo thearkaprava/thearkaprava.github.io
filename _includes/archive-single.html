@@ -12,7 +12,8 @@
 {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: " list" }}__item" style="margin-top: -2em;">
+<div class="{{ include.type | default: " list" }}__item"
+  style="margin-top: -2em; margin-bottom: 3em; font-size: 0.9em;">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
     <div class="archive__item-teaser">
@@ -21,7 +22,7 @@
     </div>
     {% endif %}
 
-    <h2 class="archive__item-title" itemprop="headline" style="margin-bottom: 0em;">
+    <h2 class="archive__item-title" itemprop="headline" style="margin-bottom: 0em; font-size: 1.2em;">
       {% if post.link %}
       <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i
           class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
@@ -31,40 +32,40 @@
     </h2>
 
     {% if post.collection == 'publications' %}
-    <div
-      style="display: grid; grid-template-columns: 1fr 1fr; gap: 2em; max-width: 100%; margin: 0 auto; border: 2px solid blue;">
-      <div style="border: 2px solid green;">
-        {% if post.authors %}
-        <p style="margin: 0.1em 0; line-height: 1.2;">{{ post.authors }}</p>
-        {% endif %}
-
-        {% if post.venue %}
-        <p style="margin: 0.1em 0; line-height: 1.2;"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" |
-          date: "%Y" }}</p>
-        {% endif %}
-
-        <p style="margin: 0.1em 0; line-height: 1.2;">
-          {% if post.paperurl %}
-          [<a href="{{ post.paperurl | remove: '[Link](' | remove: ')' }}">Paper</a>]
-          {% endif %}
-          {% if post.codeurl %}
-          [<a href="{{ post.codeurl }}">Code</a>]
-          {% endif %}
-        </p>
-
-        {% if post.excerpt %}
-        <p class="archive__item-excerpt" style="margin: 0.1em 0; line-height: 1.2;" itemprop="description">{{
-          post.excerpt }}</p>
-        {% endif %}
-      </div>
-
-      {% if post.image %}
-      <div style="border: 2px solid red;">
-        <img src="{{ base_path }}/images/{{ post.image }}" alt="Paper visualization"
-          style="width: 100%; height: auto; display: block; object-fit: contain;"
-          onerror="this.style.display='none'; console.log('Failed to load image: {{ post.image }}');">
-      </div>
+    <div style="width: 100%; margin: 0 auto;">
+      {% if post.authors %}
+      <p style="margin: 0.1em 0; line-height: 1.2;">{{ post.authors }}</p>
       {% endif %}
+
+      {% if post.venue %}
+      <p style="margin: 0.1em 0; line-height: 1.2;"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" |
+        date: "%Y" }}</p>
+      {% endif %}
+
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 0.2em;">
+        <div style="flex: 0 1 auto;">
+          <p style="margin: 0.1em 0; line-height: 1.2;">
+            {% if post.paperurl %}
+            [<a href="{{ post.paperurl | remove: '[Link](' | remove: ')' }}">Paper</a>]
+            {% endif %}
+            {% if post.codeurl %}
+            [<a href="{{ post.codeurl }}">Code</a>]
+            {% endif %}
+          </p>
+
+          {% if post.excerpt %}
+          <p class="archive__item-excerpt" style="margin: 0.1em 0; line-height: 1.2;" itemprop="description">{{
+            post.excerpt }}</p>
+          {% endif %}
+        </div>
+
+        {% if post.image %}
+        <div style="flex: 0 1 50%; margin-left: 2em;">
+          <img src="{{ base_path }}/images/{{ post.image }}" alt="Paper visualization"
+            style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+        {% endif %}
+      </div>
     </div>
     {% endif %}
 
