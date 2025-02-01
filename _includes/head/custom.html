@@ -22,11 +22,242 @@
 <meta name="msapplication-TileImage" content="{{ base_path }}/images/mstile-144x144.png?v=M44lzPylqQ">
 <meta name="msapplication-config" content="{{ base_path }}/images/browserconfig.xml?v=M44lzPylqQ">
 <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+<link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css" />
 
+<!-- Add Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <!-- Support for MatJax -->
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<!-- Theme toggle styles -->
+<style>
+    :root {
+        --bg-color: #ffffff;
+        --text-color: #000000;
+        --link-color: #0366d6;
+        --masthead-bg: #f5f5f5;
+        --social-icon-color: #000000;
+        /* Base font sizes */
+        --base-font-size: 0.85em;
+        --heading-scale: 0.9;
+    }
+
+    :root[data-theme="dark"] {
+        --bg-color: #1a1a1a;
+        --text-color: #ffffff;
+        --link-color: #ffd700;
+        --masthead-bg: #2d2d2d;
+        --social-icon-color: #ffffff;
+    }
+
+    /* Reset link colors */
+    a,
+    a:link,
+    a:visited,
+    .page__content a,
+    .wordwrap a {
+        /* Added specific selector for Google Scholar link */
+        color: var(--link-color) !important;
+        text-decoration: none !important;
+    }
+
+    /* Make publication titles use text color */
+    .archive__item-title,
+    .archive__item-title a,
+    .archive__item .archive__item-title,
+    .archive__item .archive__item-title a,
+    h2.archive__item-title,
+    div.archive__item h2.archive__item-title a {
+        color: var(--link-color) !important;
+        text-decoration: none !important;
+    }
+
+    /* Unified hover state for regular links */
+    a:hover,
+    .page__content a:hover,
+    .wordwrap a:hover {
+        /* Added hover state for Google Scholar link */
+        color: var(--link-color) !important;
+        text-decoration: underline !important;
+    }
+
+    /* Hover state for publication titles */
+    .archive__item-title:hover,
+    .archive__item-title a:hover,
+    .archive__item .archive__item-title:hover,
+    .archive__item .archive__item-title a:hover,
+    h2.archive__item-title:hover,
+    div.archive__item h2.archive__item-title a:hover {
+        color: var(--link-color) !important;
+        text-decoration: underline !important;
+    }
+
+    body {
+        background-color: var(--bg-color) !important;
+        color: var(--text-color) !important;
+        font-size: var(--base-font-size) !important;
+    }
+
+    .masthead {
+        background-color: var(--masthead-bg) !important;
+    }
+
+    .theme-toggle {
+        cursor: pointer;
+        padding: 5px;
+        margin-left: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-color);
+    }
+
+    /* Ensure proper contrast for navigation links */
+    .greedy-nav .visible-links a {
+        color: var(--text-color) !important;
+    }
+
+    /* Style adjustments for dark mode */
+    :root[data-theme="dark"] .greedy-nav {
+        background: var(--masthead-bg) !important;
+    }
+
+    /* Publication title specific styling */
+    .archive__item-title a:hover {
+        text-decoration: underline;
+    }
+
+    /* Unified styling for all icons (FA and Academicons) */
+    .author__urls-wrapper i.fa,
+    .author__urls-wrapper i.fab,
+    .author__urls-wrapper i.fas,
+    .author__urls-wrapper i.ai {
+        color: var(--social-icon-color) !important;
+        font-size: 1.1em !important;
+        line-height: 1em !important;
+        width: 1.6em !important;
+        display: inline-block !important;
+        text-align: center !important;
+        margin-right: 0.3em !important;
+        position: relative !important;
+        top: -0.1em !important;
+        vertical-align: middle !important;
+    }
+
+    /* Clean up spacing after icons */
+    .author__urls-wrapper i+span {
+        vertical-align: middle !important;
+    }
+
+    /* Remove scrollbar and fix layout */
+    .author__urls-wrapper {
+        overflow: visible !important;
+        position: relative !important;
+        max-height: none !important;
+    }
+
+    .author__urls {
+        padding: 0 !important;
+        list-style: none !important;
+        margin: 0 !important;
+        font-size: var(--base-font-size) !important;
+    }
+
+    .author__urls li {
+        display: flex !important;
+        align-items: center !important;
+        line-height: 1.5 !important;
+    }
+
+    .author__urls li span {
+        vertical-align: middle !important;
+    }
+
+    /* Adjust heading sizes */
+    h1 {
+        font-size: calc(2em * var(--heading-scale)) !important;
+    }
+
+    h2 {
+        font-size: calc(1.5em * var(--heading-scale)) !important;
+    }
+
+    h3 {
+        font-size: calc(1.3em * var(--heading-scale)) !important;
+    }
+
+    h4 {
+        font-size: calc(1.2em * var(--heading-scale)) !important;
+    }
+
+    h5 {
+        font-size: calc(1.1em * var(--heading-scale)) !important;
+    }
+
+    h6 {
+        font-size: calc(1em * var(--heading-scale)) !important;
+    }
+
+    /* Adjust navigation and menu items */
+    .greedy-nav {
+        font-size: var(--base-font-size) !important;
+    }
+
+    /* Adjust sidebar content */
+    .author__content {
+        font-size: var(--base-font-size) !important;
+    }
+
+    /* Adjust main content area */
+    .page__content {
+        font-size: var(--base-font-size) !important;
+    }
+
+    /* Adjust publication titles and content */
+    .archive__item-title {
+        font-size: calc(1.2em * var(--heading-scale)) !important;
+    }
+
+    .archive__item-excerpt {
+        font-size: var(--base-font-size) !important;
+    }
+
+    /* Increase size for main navigation items and site title */
+    .site-title {
+        font-size: calc(var(--base-font-size) * 1.5) !important;
+        font-weight: bold !important;
+    }
+
+    .greedy-nav .visible-links li a {
+        font-size: calc(var(--base-font-size) * 1.5) !important;
+        font-weight: normal !important;
+    }
+
+    .greedy-nav .visible-links li a.active {
+        font-weight: bold !important;
+    }
+
+    /* CV page specific styles */
+    .page__content h1 {
+        font-size: calc(1.5em * var(--heading-scale)) !important;
+        margin-top: 1em !important;
+    }
+
+    .page__content h2,
+    .page__content h3 {
+        font-size: calc(1.2em * var(--heading-scale)) !important;
+    }
+
+    /* Style for the CV download section */
+    .page__content div[style*="text-align: center"] span {
+        font-size: var(--base-font-size) !important;
+    }
+
+    .page__content div[style*="text-align: center"] i {
+        font-size: calc(var(--base-font-size) * 1.2) !important;
+    }
+</style>
 
 <!-- end custom head snippets -->

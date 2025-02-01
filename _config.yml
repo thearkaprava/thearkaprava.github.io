@@ -21,7 +21,7 @@ repository               : "thearkaprava/thearkaprava.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "westin_AS.jpeg"
+  avatar           : "profile.png"
   name             : "Arkaprava Sinha"
   pronouns         : #"he/him"  
   bio              : "PhD Computer Vision"
@@ -357,3 +357,8 @@ compress_html:
 # Remove or disable footer-related settings
 footer:
   links: []    # Empty the footer links array
+
+# Theme Settings
+theme_settings:
+  light_mode_color: "#0366d6"  # Blue color
+  dark_mode_color: "#ffd700"   # Golden color

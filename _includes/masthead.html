@@ -4,20 +4,152 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <a class="site-title" href="{{ base_path }}/">{{ site.title }}</a>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
           {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-              {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+          <li class="masthead__menu-item">
+            <a href="{{ domain }}{{ link.url }}" {% if page.url contains link.url %}class="active" {% endif %}>
+              {{ link.title }}
+            </a>
+          </li>
           {% endfor %}
         </ul>
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
         <ul class="hidden-links hidden"></ul>
+        <div class="theme-toggle">
+          <i class="fas fa-sun" id="theme-toggle-icon" aria-hidden="true"></i>
+        </div>
       </nav>
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const savedTheme = localStorage.getItem('theme');
+
+    function setTheme(isDark) {
+      const root = document.documentElement;
+      const themeIcon = document.getElementById('theme-toggle-icon');
+
+      if (isDark) {
+        root.setAttribute('data-theme', 'dark');
+        if (themeIcon) {
+          themeIcon.classList.remove('fa-sun');
+          themeIcon.classList.add('fa-moon');
+        }
+      } else {
+        root.removeAttribute('data-theme');
+        if (themeIcon) {
+          themeIcon.classList.remove('fa-moon');
+          themeIcon.classList.add('fa-sun');
+        }
+      }
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    }
+
+    // Set initial theme
+    if (savedTheme) {
+      setTheme(savedTheme === 'dark');
+    } else {
+      setTheme(prefersDark.matches);
+    }
+
+    // Add click handler to toggle theme
+    const themeToggle = document.querySelector('.theme-toggle');
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        setTheme(currentTheme !== 'dark');
+      });
+    }
+
+    // Listen for system theme changes
+    prefersDark.addEventListener('change', (e) => {
+      if (!localStorage.getItem('theme')) {
+        setTheme(e.matches);
+      }
+    });
+  });
+</script>
+
+<style>
+  .masthead {
+    border-bottom: 1px solid #f2f3f3;
+  }
+
+  .masthead__inner-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0.5em;
+  }
+
+  .greedy-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--masthead-bg);
+    padding: 0.25em 0.5em;
+    min-height: 2em;
+    margin-left: 10em;
+  }
+
+  .site-title {
+    margin-right: 1em;
+  }
+
+  .visible-links {
+    display: flex;
+    flex-grow: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2em;
+  }
+
+  .visible-links li {
+    margin: 0;
+  }
+
+  .masthead__menu-item {
+    padding: 0;
+  }
+
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 0.5em;
+    font-size: 1.2em;
+    position: absolute;
+    right: 1em;
+  }
+
+  .theme-toggle i {
+    color: var(--text-color);
+  }
+
+  @media screen and (max-width: 600px) {
+    .greedy-nav {
+      padding: 0.25em;
+    }
+
+    .visible-links {
+      gap: 0.5em;
+    }
+  }
+
+  .visible-links a {
+    font-weight: normal;
+    /* Make all links normal weight by default */
+  }
+
+  .visible-links a.active {
+    font-weight: bold;
+    /* Bold only the active page link */
+  }
+</style>
