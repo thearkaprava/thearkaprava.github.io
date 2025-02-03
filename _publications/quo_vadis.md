@@ -3,7 +3,7 @@ title: "Quo Vadis, Video Understanding with Vision-Language Foundation Models?"
 collection: publications
 category: publication
 permalink: #/publication/2009-10-01-paper-title-number-1
-excerpt: 'LLAVIDAL, a Large Language Vision Model, incorporates 3D poses and relevant object trajectories to understand the intricate spatiotemporal relationships within ADLs.'
+excerpt: 'This study benchmarks Vision-Language Models (VLMs & VLLMs) on five ADL video tasks across 11 datasets, revealing their struggles with fine-grained action understanding. Despite their web-scale success, these models fall short on real-world, densely labeled, and long-video challenges.'
 date: 2024-12-10
 venue: NeurIPSW 
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'

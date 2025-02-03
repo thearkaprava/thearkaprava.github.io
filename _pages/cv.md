@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<div style="margin-bottom: 2em; text-align: center;">
+<div style="margin-bottom: 2em; text-align: left;">
   <span style="font-size: 1.2em; margin-right: 10px;">Download the latest Resume</span>
   <a href="{{ base_path }}/files/Arkaprava_Sinha_CV.pdf" target="_blank" 
      style="display: inline-block; vertical-align: middle;">
