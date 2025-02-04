@@ -42,14 +42,8 @@
     :root {
         --bg-color: #ffffff;
         --text-color: #000000;
-
-        --link-color: {
-                {
-                site.theme_settings.light_mode_color | default: "#0366d6"
-            }
-        }
-
-        ;
+        --link-color: #0366d6;
+        /* Default blue color */
         --masthead-bg: #f5f5f5;
         --social-icon-color: #000000;
         /* Base font sizes */
@@ -61,14 +55,8 @@
     [data-theme="dark"] {
         --bg-color: #1a1a1a;
         --text-color: #ffffff;
-
-        --link-color: {
-                {
-                site.theme_settings.dark_mode_color | default: "#ffd700"
-            }
-        }
-
-        ;
+        --link-color: #ffd700;
+        /* Golden color */
         --masthead-bg: #2d2d2d;
         --social-icon-color: #ffffff;
     }
@@ -89,7 +77,7 @@
 
     /* Ensure links use theme colors */
     a {
-        color: var(--link-color);
+        color: var(--link-color) !important;
         transition: color 0.3s ease;
     }
 
@@ -99,11 +87,11 @@
     a:visited,
     .page__content a,
     .wordwrap a {
-        /* Added specific selector for Google Scholar link */
+        color: var(--link-color) !important;
         text-decoration: none !important;
     }
 
-    /* Make publication titles use text color */
+    /* Make publication titles use link color */
     .archive__item-title,
     .archive__item-title a,
     .archive__item .archive__item-title,
@@ -114,23 +102,14 @@
         text-decoration: none !important;
     }
 
-    /* Unified hover state for regular links */
+    /* Unified hover state */
     a:hover,
     .page__content a:hover,
-    .wordwrap a:hover {
-        /* Added hover state for Google Scholar link */
-        text-decoration: underline !important;
-    }
-
-    /* Hover state for publication titles */
+    .wordwrap a:hover,
     .archive__item-title:hover,
-    .archive__item-title a:hover,
-    .archive__item .archive__item-title:hover,
-    .archive__item .archive__item-title a:hover,
-    h2.archive__item-title:hover,
-    div.archive__item h2.archive__item-title a:hover {
-        color: var(--link-color) !important;
+    .archive__item-title a:hover {
         text-decoration: underline !important;
+        color: var(--link-color) !important;
     }
 
     .masthead {

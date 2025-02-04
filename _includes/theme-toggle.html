@@ -1,5 +1,5 @@
 <!-- Add theme toggle button -->
-<div class="theme-toggle" style="position: fixed; top: 1em; right: 1em; z-index: 1000;">
+<div class="theme-toggle" id="unique-theme-toggle" style="position: fixed; top: 1em; right: 1em; z-index: 1000;">
     <button id="theme-toggle-button" style="background: none; border: none; padding: 8px; cursor: pointer;">
         <i class="fas fa-sun" id="theme-toggle-icon" style="font-size: 20px;" aria-hidden="true"></i>
     </button>
@@ -7,7 +7,15 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        // Theme toggle logic
+        // Check if theme toggle already exists and remove duplicates
+        const toggles = document.querySelectorAll('.theme-toggle');
+        if (toggles.length > 1) {
+            for (let i = 1; i < toggles.length; i++) {
+                toggles[i].remove();
+            }
+        }
+
+        // Rest of the theme toggle logic
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
         const savedTheme = localStorage.getItem('theme');
         const root = document.documentElement;
