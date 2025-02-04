@@ -15,7 +15,11 @@ layout: compress
 <body>
   {% include browser-upgrade.html %}
   {% include masthead.html %}
+
+  <!-- Include theme toggle only once -->
+  {% unless page.hide_theme_toggle %}
   {% include theme-toggle.html %}
+  {% endunless %}
 
   {{ content }}
 

@@ -6,32 +6,29 @@
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Check if theme toggle already exists and remove duplicates
-        const toggles = document.querySelectorAll('.theme-toggle');
+    // Immediately remove any duplicate theme toggles
+    (function () {
+        const toggles = document.querySelectorAll('#unique-theme-toggle');
         if (toggles.length > 1) {
             for (let i = 1; i < toggles.length; i++) {
                 toggles[i].remove();
             }
         }
+    })();
 
-        // Rest of the theme toggle logic
+    // Initialize theme toggle
+    function initializeThemeToggle() {
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
         const savedTheme = localStorage.getItem('theme');
         const root = document.documentElement;
         const themeToggleButton = document.getElementById('theme-toggle-button');
         const themeIcon = document.getElementById('theme-toggle-icon');
 
+        if (!themeToggleButton || !themeIcon) return;
+
         function setTheme(isDark) {
-            if (isDark) {
-                root.setAttribute('data-theme', 'dark');
-                themeIcon.classList.remove('fa-sun');
-                themeIcon.classList.add('fa-moon');
-            } else {
-                root.setAttribute('data-theme', 'light');
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
-            }
+            root.setAttribute('data-theme', isDark ? 'dark' : 'light');
+            themeIcon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
         }
 
@@ -54,5 +51,12 @@
                 setTheme(e.matches);
             }
         });
-    });
+    }
+
+    // Initialize on DOMContentLoaded
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeThemeToggle);
+    } else {
+        initializeThemeToggle();
+    }
 </script>
