@@ -38,10 +38,18 @@
 
 <!-- Theme toggle styles -->
 <style>
+    /* Base theme variables */
     :root {
         --bg-color: #ffffff;
         --text-color: #000000;
-        --link-color: #0366d6;
+
+        --link-color: {
+                {
+                site.theme_settings.light_mode_color | default: "#0366d6"
+            }
+        }
+
+        ;
         --masthead-bg: #f5f5f5;
         --social-icon-color: #000000;
         /* Base font sizes */
@@ -49,12 +57,40 @@
         --heading-scale: 0.9;
     }
 
-    :root[data-theme="dark"] {
+    /* Dark theme variables */
+    [data-theme="dark"] {
         --bg-color: #1a1a1a;
         --text-color: #ffffff;
-        --link-color: #ffd700;
+
+        --link-color: {
+                {
+                site.theme_settings.dark_mode_color | default: "#ffd700"
+            }
+        }
+
+        ;
         --masthead-bg: #2d2d2d;
         --social-icon-color: #ffffff;
+    }
+
+    /* Apply theme colors */
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        transition: background-color 0.3s ease, color 0.3s ease;
+        font-size: var(--base-font-size) !important;
+    }
+
+    /* Theme toggle button styles */
+    #theme-toggle-button {
+        color: var(--text-color);
+        transition: color 0.3s ease;
+    }
+
+    /* Ensure links use theme colors */
+    a {
+        color: var(--link-color);
+        transition: color 0.3s ease;
     }
 
     /* Reset link colors */
@@ -64,7 +100,6 @@
     .page__content a,
     .wordwrap a {
         /* Added specific selector for Google Scholar link */
-        color: var(--link-color) !important;
         text-decoration: none !important;
     }
 
@@ -84,7 +119,6 @@
     .page__content a:hover,
     .wordwrap a:hover {
         /* Added hover state for Google Scholar link */
-        color: var(--link-color) !important;
         text-decoration: underline !important;
     }
 
@@ -99,12 +133,6 @@
         text-decoration: underline !important;
     }
 
-    body {
-        background-color: var(--bg-color) !important;
-        color: var(--text-color) !important;
-        font-size: var(--base-font-size) !important;
-    }
-
     .masthead {
         background-color: var(--masthead-bg) !important;
     }
@@ -116,7 +144,6 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        color: var(--text-color);
     }
 
     /* Ensure proper contrast for navigation links */
