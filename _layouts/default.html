@@ -16,10 +16,10 @@ layout: compress
   {% include browser-upgrade.html %}
   {% include masthead.html %}
 
-  <!-- Include theme toggle only once -->
-  {% unless page.hide_theme_toggle %}
+  <!-- Include theme toggle -->
+  {% if layout.theme_toggle != false %}
   {% include theme-toggle.html %}
-  {% endunless %}
+  {% endif %}
 
   {{ content }}
 

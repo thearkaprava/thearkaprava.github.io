@@ -1,49 +1,78 @@
 <!-- Single theme toggle button -->
-<div class="theme-toggle" style="position: fixed; top: 1em; right: 1em; z-index: 1000;">
-    <button onclick="toggleTheme()" style="background: none; border: none; padding: 8px; cursor: pointer;">
+<div id="unique-theme-toggle" class="theme-toggle" style="position: fixed; top: 1em; right: 1em; z-index: 1000;">
+    <button id="theme-toggle-button" style="background: none; border: none; padding: 8px; cursor: pointer;">
         <i class="fas fa-sun" id="theme-toggle-icon" style="font-size: 20px; color: var(--text-color);"
             aria-hidden="true"></i>
     </button>
 </div>
 
 <script>
-    // Remove any existing theme toggles first
-    document.addEventListener('DOMContentLoaded', function () {
-        const existingToggles = document.querySelectorAll('.theme-toggle');
-        existingToggles.forEach((toggle, index) => {
-            if (index > 0) toggle.remove();
+    (function () {
+        // Remove duplicate toggles
+        function removeDuplicateToggles() {
+            const toggles = document.querySelectorAll('#unique-theme-toggle');
+            for (let i = 1; i < toggles.length; i++) {
+                toggles[i].remove();
+            }
+        }
+
+        // Theme toggle functionality
+        function setTheme(isDark) {
+            document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+            const icon = document.getElementById('theme-toggle-icon');
+            if (icon) {
+                icon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
+            }
+            try {
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            } catch (e) {
+                console.error('Local storage is not available:', e);
+            }
+        }
+
+        function getInitialTheme() {
+            try {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme) {
+                    return savedTheme === 'dark';
+                }
+            } catch (e) {
+                console.error('Local storage is not available:', e);
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+
+        function initThemeToggle() {
+            removeDuplicateToggles();
+
+            const button = document.getElementById('theme-toggle-button');
+            if (!button) return;
+
+            // Set initial theme
+            setTheme(getInitialTheme());
+
+            // Add click handler
+            button.addEventListener('click', function () {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                setTheme(currentTheme !== 'dark');
+            });
+        }
+
+        // Initialize on load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initThemeToggle);
+        } else {
+            initThemeToggle();
+        }
+
+        // Re-initialize on dynamic content changes
+        const observer = new MutationObserver(function (mutations) {
+            removeDuplicateToggles();
         });
-    });
-</script>
 
-<script>
-    // Theme toggle functionality
-    function setTheme(isDark) {
-        const root = document.documentElement;
-        const icon = document.getElementById('theme-toggle-icon');
-
-        root.setAttribute('data-theme', isDark ? 'dark' : 'light');
-        icon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    }
-
-    function toggleTheme() {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        setTheme(currentTheme !== 'dark');
-    }
-
-    // Initialize theme
-    function initTheme() {
-        const savedTheme = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        setTheme(savedTheme ? savedTheme === 'dark' : prefersDark);
-    }
-
-    // Run initialization
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initTheme);
-    } else {
-        initTheme();
-    }
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    })();
 </script>
