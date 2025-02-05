@@ -19,63 +19,10 @@
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>
-        <div class="theme-toggle">
-          <i class="fas fa-sun" id="theme-toggle-icon" aria-hidden="true"></i>
-        </div>
       </nav>
     </div>
   </div>
 </div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const savedTheme = localStorage.getItem('theme');
-
-    function setTheme(isDark) {
-      const root = document.documentElement;
-      const themeIcon = document.getElementById('theme-toggle-icon');
-
-      if (isDark) {
-        root.setAttribute('data-theme', 'dark');
-        if (themeIcon) {
-          themeIcon.classList.remove('fa-sun');
-          themeIcon.classList.add('fa-moon');
-        }
-      } else {
-        root.removeAttribute('data-theme');
-        if (themeIcon) {
-          themeIcon.classList.remove('fa-moon');
-          themeIcon.classList.add('fa-sun');
-        }
-      }
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    }
-
-    // Set initial theme
-    if (savedTheme) {
-      setTheme(savedTheme === 'dark');
-    } else {
-      setTheme(prefersDark.matches);
-    }
-
-    // Add click handler to toggle theme
-    const themeToggle = document.querySelector('.theme-toggle');
-    if (themeToggle) {
-      themeToggle.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        setTheme(currentTheme !== 'dark');
-      });
-    }
-
-    // Listen for system theme changes
-    prefersDark.addEventListener('change', (e) => {
-      if (!localStorage.getItem('theme')) {
-        setTheme(e.matches);
-      }
-    });
-  });
-</script>
 
 <style>
   .masthead {
@@ -117,20 +64,6 @@
 
   .masthead__menu-item {
     padding: 0;
-  }
-
-  .theme-toggle {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin-left: 0.5em;
-    font-size: 1.2em;
-    position: absolute;
-    right: 1em;
-  }
-
-  .theme-toggle i {
-    color: var(--text-color);
   }
 
   @media screen and (max-width: 600px) {
