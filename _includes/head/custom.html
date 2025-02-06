@@ -51,20 +51,35 @@
         --link-color: #0366d6;
         --masthead-bg: #f5f5f5;
         --social-icon-color: #000000;
+        --heading-color: #000000;
     }
 
-    :root[data-theme="dark"] {
+    [data-theme="dark"] {
         --bg-color: #1a1a1a;
         --text-color: #ffffff;
         --link-color: #ffd700;
         --masthead-bg: #2d2d2d;
         --social-icon-color: #ffffff;
+        --heading-color: #ffffff;
     }
 
     body {
         background-color: var(--bg-color);
         color: var(--text-color);
         transition: background-color 0.3s, color 0.3s;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--heading-color);
+    }
+
+    .page__content {
+        color: var(--text-color);
     }
 
     #theme-toggle-icon {
@@ -93,100 +108,40 @@
 
 <!-- Theme toggle script -->
 <script>
-    // Debug logging function
-    function logDebug(message) {
-        console.log(`[Theme Toggle Debug]: ${message}`);
-    }
-
-    // Initialize theme based on user preference or stored setting
     function initTheme() {
-        try {
-            logDebug('Initializing theme...');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const savedTheme = localStorage.getItem('theme');
-            const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const savedTheme = localStorage.getItem('theme');
+        const theme = savedTheme || (prefersDark ? 'dark' : 'light');
 
-            logDebug(`Setting initial theme to: ${theme}`);
-            document.documentElement.setAttribute('data-theme', theme);
-            updateIcon(theme === 'dark');
-        } catch (error) {
-            console.error('Error initializing theme:', error);
-        }
+        document.documentElement.setAttribute('data-theme', theme);
+        updateIcon(theme === 'dark');
     }
 
-    // Update icon appearance
     function updateIcon(isDark) {
-        try {
-            const icon = document.getElementById('theme-toggle-icon');
-            if (icon) {
-                icon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
-                logDebug(`Icon updated to: ${isDark ? 'moon' : 'sun'}`);
-            } else {
-                logDebug('Theme toggle icon element not found');
-            }
-        } catch (error) {
-            console.error('Error updating icon:', error);
+        const icon = document.getElementById('theme-toggle-icon');
+        if (icon) {
+            icon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
         }
     }
 
-    // Toggle theme function
     function toggleTheme() {
-        try {
-            logDebug('Toggle theme called');
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-            logDebug(`Switching theme from ${currentTheme} to ${newTheme}`);
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateIcon(newTheme === 'dark');
-        } catch (error) {
-            console.error('Error toggling theme:', error);
-        }
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcon(newTheme === 'dark');
     }
 
-    // Ensure the toggle button exists and is properly set up
-    function setupThemeToggle() {
-        try {
-            const toggleButton = document.getElementById('theme-toggle');
-            if (toggleButton) {
-                logDebug('Theme toggle button found');
-                // Remove any existing click listeners
-                const newButton = toggleButton.cloneNode(true);
-                toggleButton.parentNode.replaceChild(newButton, toggleButton);
+    // Initialize theme when DOM is ready
+    document.addEventListener('DOMContentLoaded', initTheme);
 
-                // Add click listener
-                newButton.querySelector('button').addEventListener('click', function (e) {
-                    e.preventDefault();
-                    toggleTheme();
-                });
-            } else {
-                logDebug('Theme toggle button not found');
-            }
-        } catch (error) {
-            console.error('Error setting up theme toggle:', error);
-        }
-    }
-
-    // Run initialization when DOM is ready
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function () {
-            logDebug('DOM Content Loaded');
-            initTheme();
-            setupThemeToggle();
-        });
-    } else {
-        logDebug('DOM already loaded');
-        initTheme();
-        setupThemeToggle();
-    }
-
-    // Add listener for system theme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
-        logDebug('System theme preference changed');
+    // Handle system theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
         if (!localStorage.getItem('theme')) {
+            const newTheme = e.matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', newTheme);
             updateIcon(e.matches);
-            document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
         }
     });
 </script>

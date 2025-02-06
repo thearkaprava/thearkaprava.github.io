@@ -7,7 +7,7 @@ excerpt: 'SKI models integrate 3D skeletons into vision-language models using Sk
 date: 2025-02-4
 venue: AAAI
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://arxiv.org/pdf/2502.03459'
+paperurl: 'https://arxiv.org/abs/2502.03459'
 codeurl: 'https://github.com/thearkaprava/SKI-Models'
 citation: #'Sinha, Arkaprava, et al. "MS-Temba: Multi-Scale Temporal Mamba for Efficient Temporal Action Detection." arXiv preprint arXiv:2501.06138 (2025).'
 authors: '<span style="font-size: 0.8em;"><strong>Arkaprava Sinha</strong>, Dominick Reilly, Francois Bremond, Pu Wang, Srijan Das</span>'

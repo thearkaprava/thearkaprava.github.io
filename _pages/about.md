@@ -21,7 +21,7 @@ My research is centered on video representation learning, with a focus on utiliz
 - **SKI Models: Spatio-temporal Knowledge Injection Models for Video Understanding**  
   *The 39th Annual AAAI Conference on Artificial Intelligence (AAAI), 2025*  
   **Arkaprava Sinha**, Dominick Reilly, Francois Bremond, Pu Wang, Srijan Das  
-  <!-- [Paper](https://arxiv.org/abs/2501.06138) | [Code](https://github.com/thearkaprava/SKI-Models) -->
+  [Paper](https://arxiv.org/abs/2502.03459) | [Code](https://github.com/thearkaprava/SKI-Models)
 
 - **MS-Temba: Multi-Scale Temporal Modeling for Better Action Detection**  
   *Preprint*  
