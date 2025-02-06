@@ -7,14 +7,14 @@ excerpt: 'SKI models integrate 3D skeletons into vision-language models using Sk
 date: 2025-02-4
 venue: AAAI
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
-paperurl: #'https://arxiv.org/abs/2501.06138'
-codeurl: #'https://github.com/thearkaprava/SKI-Models'
+paperurl: 'https://arxiv.org/pdf/2502.03459'
+codeurl: 'https://github.com/thearkaprava/SKI-Models'
 citation: #'Sinha, Arkaprava, et al. "MS-Temba: Multi-Scale Temporal Mamba for Efficient Temporal Action Detection." arXiv preprint arXiv:2501.06138 (2025).'
 authors: '<span style="font-size: 0.8em;"><strong>Arkaprava Sinha</strong>, Dominick Reilly, Francois Bremond, Pu Wang, Srijan Das</span>'
 image: #'image-alignment-300x200.jpg'
 ---
 
-<!-- [Paper](https://arxiv.org/abs/2501.06138), [Code](https://github.com/thearkaprava/SKI-Models) -->
+[Paper](https://arxiv.org/pdf/2502.03459), [Code](https://github.com/thearkaprava/SKI-Models)
 
 ## Abstract:
 The introduction of vision-language models like CLIP has enabled the development of foundational video models capable of generalizing to unseen videos and human actions. However, these models are typically trained on web videos, which often fail to capture the challenges present in Activities of Daily Living (ADL) videos. Existing works address ADL-specific challenges, such as *similar appearances*, *subtle motion patterns*, and *multiple viewpoints*, by combining 3D skeletons and RGB videos. However, these approaches are not integrated with language, limiting their ability to generalize to unseen action classes.
