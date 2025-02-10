@@ -23,12 +23,12 @@ My research is centered on video representation learning, with a focus on utiliz
   **Arkaprava Sinha**, Dominick Reilly, Francois Bremond, Pu Wang, Srijan Das  
   [Paper](https://arxiv.org/abs/2502.03459) | [Code](https://github.com/thearkaprava/SKI-Models)
 
-- **MS-Temba: Multi-Scale Temporal Modeling for Better Action Detection**  
+- **MS-Temba: Multi-Scale Temporal Mamba for Efficient Temporal Action Detection**  
   *Preprint*  
   **Arkaprava Sinha**, Monish Soundar Raj, Pu Wang, Ahmed Helmy, Srijan Das  
   [Paper](https://arxiv.org/abs/2501.06138) | [Code](https://github.com/thearkaprava/MS-Temba)
 
-- **LLAVIDAL: Large Language and Vision Models for Action Detection and Localization**  
+- **LLAVIDAL: A Large Language Vision Model for Daily Activities of Living**  
   *Preprint*  
   Dominick Reilly, Rajatsubhra Chakraborty, **Arkaprava Sinha**, Manish Kumar Govind, Pu Wang, Francois Bremond, Le Xue, Srijan Das  
   [Paper](https://arxiv.org/abs/2406.09390) | [Code](https://github.com/ADL-X/LLAVIDAL)
