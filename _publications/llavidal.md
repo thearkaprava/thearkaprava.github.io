@@ -4,8 +4,8 @@ collection: publications
 category: publication
 permalink: #/publication/2009-10-01-paper-title-number-1
 excerpt: 'LLAVIDAL, a Large Language Vision Model, incorporates 3D poses and relevant object trajectories to understand the intricate spatiotemporal relationships within ADLs.'
-date: 2024-12-12
-venue: preprint
+date: 2025-02-26
+venue: CVPR 
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://arxiv.org/abs/2406.09390'
 codeurl: 'https://github.com/ADL-X/LLAVIDAL'
