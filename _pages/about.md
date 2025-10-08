@@ -7,10 +7,14 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am Arkaprava Sinha, a Graduate Research Assistant pursuing a Ph.D. in Computer Science at the University of North Carolina, Charlotte. I am advised by [Prof. Srijan Das](https://srijandas07.github.io). My research focuses on Video Understanding, Multimodal Learning, and Temporal Action Detection. I have prior experience as a Data Scientist, contributing to innovative projects in Computer Vision, and Machine Learning.
+Hello! I am Arkaprava Sinha, a Graduate Research Assistant pursuing a Ph.D. in Computer Science at the University of North Carolina, Charlotte. I am advised by [Prof. Srijan Das](https://srijandas07.github.io). My research lies in the intersection of Vision Language Models, Video Understanding, Temporal Modeling and Multimodal Learning with a focus on building scalable and reliable algorithms for Long Video Understanding. 
+
+Prior to my Ph.D., I worked as a Data Scientist, where I contributed to projects in computer vision, natural language processing, and large-scale machine learning systems across industry and research settings.
 
 ## Research
-My research is centered on video representation learning, with a focus on utilizing spatio-temporal attention mechanisms and multiple modalities. I am also deeply interested in Vision-Language Models and Self-Supervised Learning techniques. The primary applications of my research encompass Action Classification in Trimmed Videos, Temporal Action Detection in Untrimmed Videos, Robotic Vision, and the development of Video Conversational Agents.
+My research is centered on Temporal Representation Learning for Long Video Understanding, with applications to Temporal Action Detection and Video Summarization. I develop architectures that capture long-range temporal dependencies and address challenges such as action co-occurrence, temporal boundaries, and efficient representation learning in extended video sequences.
+
+In parallel, I work on Vision-Language Models (VLMs) for video understanding, exploring how multimodal inputs—such as RGB video, text, and skeleton-based motion data—can be aligned to improve contextual interpretation of human activities. I am also interested learning generalized video representation, aiming to design scalable frameworks that enhance both Action Recognition and Multimodal Video Analysis, with potential applications in Robotics and Human-Centered AI systems.
 
 ## News
 **Feb 2025** - LLAVIDAL accepted to CVPR 2025.  

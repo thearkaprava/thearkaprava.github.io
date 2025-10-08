@@ -27,20 +27,20 @@ Education
 Work experience
 ======
 * **University of North Carolina, Charlotte**, Graduate Research Assistant, 2023-present
-  * Video Understanding in Long Untrimmed Videos for Actions of Daily Living
-  * Multimodal Learning for Action Recognition in Videos
+  * Conducting research on Vision Language Models and Long Video Understanding, with a focus on temporal modeling for Activities of Daily Living.
+  * Developing multimodal frameworks that integrate video, text, and motion data for robust Action Recognition and related applications.
 
 * **Accenture AI**, Data Scientist, 2021-2023
-  * Generating Insights from thousands of Earning Transcripts of companies using Natural Language Processing
-  * Contribution to a Library of Algorithms for Accenture AI
+  * Applied Natural Language Processing techniques to extract insights from large-scale financial documents.
+  * Contributed to the development and deployment of scalable Machine Learning algorithms within Accenture’s AI solutions library.
 
 * **Larsen & Toubro Infotech**, Data Scientist, 2020-2021
-  * Building Industry solutions using Image Processing and Computer Vision
-  * Reviewing Machine Learning and Deep Learning Products
+  * Designed and implemented Computer Vision and Image Processing solutions for industry applications.
+  * Developed Machine Learning and Deep Learning models for Automated Modeling Platform.
 
 * **Teradata**, Data Science Intern, 2019
-  * Implementation of Topic Modeling Frameworks for Teradata MLE
-  * Research on new approaches for Clickstream Analysis
+  * Developed topic modeling frameworks for integration within Teradata’s machine learning engine (MLE).
+  * Researched advanced approaches for user behavior and clickstream analysis.
   
 <!-- Skills
 ======
