@@ -9,7 +9,7 @@ redirect_from:
 
 Hello! I am Arkaprava Sinha, a Graduate Research Assistant pursuing a Ph.D. in Computer Science at the University of North Carolina, Charlotte. I am advised by [Prof. Srijan Das](https://srijandas07.github.io). My research lies in the intersection of Vision Language Models, Video Understanding, Temporal Modeling and Multimodal Learning with a focus on building scalable and reliable algorithms for Long Video Understanding. 
 
-Prior to my Ph.D., I worked as a Data Scientist, where I contributed to projects in computer vision, natural language processing, and large-scale machine learning systems across industry and research settings.
+Prior to my Ph.D., I worked as a Data Scientist, where I contributed to projects in Computer Vision, Natural Language Processing, and large-scale Machine Learning systems across industry and research settings.
 
 ## Research
 My research is centered on Temporal Representation Learning for Long Video Understanding, with applications to Temporal Action Detection and Video Summarization. I develop architectures that capture long-range temporal dependencies and address challenges such as action co-occurrence, temporal boundaries, and efficient representation learning in extended video sequences.
