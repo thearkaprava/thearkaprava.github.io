@@ -14,7 +14,7 @@ Prior to my Ph.D., I worked as a Data Scientist, where I contributed to projects
 ## Research
 My research is centered on Temporal Representation Learning for Long Video Understanding, with applications to Temporal Action Detection and Video Summarization. I develop architectures that capture long-range temporal dependencies and address challenges such as action co-occurrence, temporal boundaries, and efficient representation learning in extended video sequences.
 
-In parallel, I work on Vision-Language Models (VLMs) for video understanding, exploring how multimodal inputs—such as RGB video, text, and skeleton-based motion data—can be aligned to improve contextual interpretation of human activities. I am also interested learning generalized video representation, aiming to design scalable frameworks that enhance both Action Recognition and Multimodal Video Analysis, with potential applications in Robotics and Human-Centered AI systems.
+In parallel, I work on Vision-Language Models (VLMs) for video understanding, exploring how multimodal inputs, such as RGB video, text, and skeleton-based motion data, can be aligned to improve contextual interpretation of human activities. I am also interested learning generalized video representation, aiming to design scalable frameworks that enhance both Action Recognition and Multimodal Video Analysis, with potential applications in Robotics and Human-Centered AI systems.
 
 ## News
 **Feb 2025** - LLAVIDAL accepted to CVPR 2025.  
