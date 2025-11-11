@@ -38,6 +38,11 @@ In parallel, I work on Vision-Language Models (VLMs) for video understanding, ex
   **Arkaprava Sinha**, Monish Soundar Raj, Pu Wang, Ahmed Helmy, Srijan Das  
   [Paper](https://arxiv.org/abs/2501.06138) | [Code](https://github.com/thearkaprava/MS-Temba)
 
+- **DiffSwap++: 3D Latent-Controlled Diffusion for Identity-Preserving Face Swapping**  
+  *Preprint*  
+  Weston Bondurant, **Arkaprava Sinha**, Hieu Le, Srijan Das, Stephanie Schuckers  
+  [Paper](https://arxiv.org/pdf/2511.05575)
+
 - **Quo Vadis, Video Understanding with Vision-Language Foundation Models?**  
   *NeurIPS Workshop on Video-Language Models, 2024*  
   Mahmoud Ali, Di Yang, **Arkaprava Sinha**, Dominick Reilly, Srijan Das, Gianpiero Francesca, Francois Bremond  
