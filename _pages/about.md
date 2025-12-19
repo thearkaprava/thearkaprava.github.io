@@ -23,11 +23,11 @@ In parallel, I work on Vision-Language Models (VLMs) for video understanding, ex
              NeurIPS 2024 workshop on Video-Language Models and Multimodal Algorithmic Reasoning.
 
 ## Selected Publications
-- **MS-Temba: Multi-Scale Temporal Mamba for Efficient Temporal Action Detection**  
+- **MS-Temba: Multi-Scale Temporal Mamba for Understanding Long Untrimmed Videos**  
   *Preprint*  
-  **Arkaprava Sinha**, Monish Soundar Raj, Pu Wang, Ahmed Helmy, Srijan Das  
+  **Arkaprava Sinha**, Monish Soundar Raj, Pu Wang, Ahmed Helmy, Hieu Le, Srijan Das  
   [Paper](https://arxiv.org/abs/2501.06138) | [Code](https://github.com/thearkaprava/MS-Temba) | [Website](https://mstemba.github.io)
-  
+
 - **LLAVIDAL: A Large Language Vision Model for Daily Activities of Living**  
   *The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025*  
   Dominick Reilly, Rajatsubhra Chakraborty, **Arkaprava Sinha**, Manish Kumar Govind, Pu Wang, Francois Bremond, Le Xue, Srijan Das  
