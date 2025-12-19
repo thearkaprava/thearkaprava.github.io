@@ -23,20 +23,20 @@ In parallel, I work on Vision-Language Models (VLMs) for video understanding, ex
              NeurIPS 2024 workshop on Video-Language Models and Multimodal Algorithmic Reasoning.
 
 ## Selected Publications
+- **MS-Temba: Multi-Scale Temporal Mamba for Efficient Temporal Action Detection**  
+  *Preprint*  
+  **Arkaprava Sinha**, Monish Soundar Raj, Pu Wang, Ahmed Helmy, Srijan Das  
+  [Paper](https://arxiv.org/abs/2501.06138) | [Code](https://github.com/thearkaprava/MS-Temba) | [Website](https://mstemba.github.io)
+  
 - **LLAVIDAL: A Large Language Vision Model for Daily Activities of Living**  
   *The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025*  
   Dominick Reilly, Rajatsubhra Chakraborty, **Arkaprava Sinha**, Manish Kumar Govind, Pu Wang, Francois Bremond, Le Xue, Srijan Das  
-  [Paper](https://arxiv.org/abs/2406.09390) | [Code](https://github.com/ADL-X/LLAVIDAL)
+  [Paper](https://arxiv.org/abs/2406.09390) | [Code](https://github.com/ADL-X/LLAVIDAL) | [Website](https://adl-x.github.io)
 
 - **SKI Models: Skeleton Induced Vision-Language Embeddings for Understanding Activities of Daily Living**  
   *The 39th Annual AAAI Conference on Artificial Intelligence (AAAI), 2025*  
   **Arkaprava Sinha**, Dominick Reilly, Francois Bremond, Pu Wang, Srijan Das  
   [Paper](https://arxiv.org/abs/2502.03459) | [Code](https://github.com/thearkaprava/SKI-Models)
-
-- **MS-Temba: Multi-Scale Temporal Mamba for Efficient Temporal Action Detection**  
-  *Preprint*  
-  **Arkaprava Sinha**, Monish Soundar Raj, Pu Wang, Ahmed Helmy, Srijan Das  
-  [Paper](https://arxiv.org/abs/2501.06138) | [Code](https://github.com/thearkaprava/MS-Temba)
 
 - **DiffSwap++: 3D Latent-Controlled Diffusion for Identity-Preserving Face Swapping**  
   *Preprint*  
