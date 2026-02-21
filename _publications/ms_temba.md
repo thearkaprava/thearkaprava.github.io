@@ -3,7 +3,7 @@ title: "MS-Temba: Multi-Scale Temporal Mamba for Efficient Temporal Action Detec
 collection: publications
 category: publication
 permalink: #/publication/2009-10-01-paper-title-number-1
-excerpt: 'Multi-scale Temporal Mamba adapts Mamba for action detection in long untrimmed videos by introducing Temporal Mamba (Temba) Blocks with dilated temporal modeling and a Temporal Mamba Fuser for multi-scale feature aggregation. It outperforms SOTA methods on long videos while being significantly more efficient.'
+excerpt: 'MS-Temba adapts Mamba-based state-space modeling to Temporal Action Detection by introducing dilated multi-scale SSMs that capture both fine-grained and long-range temporal dynamics in long, untrimmed videos. Through scale-aware supervision and a dedicated multi-scale fusion module, it delivers precise localization of densely overlapping actions and generalizes effectively to long-form Video Summarization.'
 date: 2026-02-20
 venue: 'CVPR'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
