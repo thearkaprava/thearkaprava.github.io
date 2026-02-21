@@ -17,6 +17,7 @@ My research is centered on Temporal Representation Learning for Long Video Under
 In parallel, I work on Vision-Language Models (VLMs) for video understanding, exploring how multimodal inputs, such as RGB video, text, and skeleton-based motion data, can be aligned to improve contextual interpretation of human activities. I am also interested learning generalized video representation, aiming to design scalable frameworks that enhance both Action Recognition and Multimodal Video Analysis, with potential applications in Robotics and Human-Centered AI systems.
 
 ## News
+**Feb 2026** - MS-Temba accepted to CVPR 2026.  
 **Feb 2025** - LLAVIDAL accepted to CVPR 2025.  
 **Dec 2024** - SKI Models accepted to AAAI 2025.  
 **Oct 2024** - 2 papers accepted to NeurIPS 2024 workshops. Early version of LLAVIDAL is presented in 
@@ -24,7 +25,7 @@ In parallel, I work on Vision-Language Models (VLMs) for video understanding, ex
 
 ## Selected Publications
 - **MS-Temba: Multi-Scale Temporal Mamba for Understanding Long Untrimmed Videos**  
-  *Preprint*  
+  *The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026*  
   **Arkaprava Sinha**, Monish Soundar Raj, Pu Wang, Ahmed Helmy, Hieu Le, Srijan Das  
   [Paper](https://arxiv.org/abs/2501.06138) | [Code](https://github.com/thearkaprava/MS-Temba) | [Website](https://mstemba.github.io)
 
