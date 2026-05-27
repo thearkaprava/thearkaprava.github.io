@@ -1,31 +1,21 @@
 ---
-title: "TimeProVe: Temporally Grounded Reasoning in Long Videos"
+title: "TimeProVe"
 permalink: /timeprove/
-layout: single
-author_profile: false
-classes: wide
-toc: true
-toc_sticky: true
+layout: timeprove
 ---
 
-<p style="font-size: 1.05em; margin-top: -0.5rem;">
-  <strong>TimeProVe</strong> is a cost-efficient hybrid framework for temporally grounded reasoning in long, untrimmed videos. It uses lightweight modules to propose action-grounded answer–evidence hypotheses, and calls an expensive vision-language model only for targeted verification.
-</p>
+<div class="timeprove-hero">
+  <h1 class="timeprove-title">TimeProVe</h1>
+  <p class="timeprove-subtitle">
+    Temporally grounded reasoning in long, untrimmed videos.
+  </p>
 
-<p style="margin: 1rem 0 1.25rem 0;">
-  <a class="btn btn--large" href="/timeprove/TimeProVe.pdf">Paper (PDF)</a>
-  <a class="btn btn--large btn--info" href="/timeprove/timeprove_teaser_emnlp26_v2.pdf">Teaser (PDF)</a>
-  <a class="btn btn--large btn--inverse" href="/timeprove/main_arch_v2.pdf">Architecture (PDF)</a>
-  <a class="btn btn--large btn--inverse" href="/timeprove/otb_overview.pdf">OpenTSUBench (PDF)</a>
-</p>
-
-<!-- If you want an author line like mstemba.github.io, fill this in. -->
-<!--
-<p style="font-size: 1.0em;">
-  <em>Arkaprava Sinha</em>, ...<br/>
-  UNC Charlotte, ...
-</p>
--->
+  <div class="timeprove-capsules">
+    <a class="btn btn--inverse" href="#">Paper</a>
+    <a class="btn btn--info" href="#">Code</a>
+    <a class="btn" href="#">Data</a>
+  </div>
+</div>
 
 ## Abstract
 
@@ -38,28 +28,28 @@ Long Video Question Answering (LVQA) requires identifying sparse, query-relevant
 
 ## TimeProVe framework (overview)
 
-<object data="/timeprove/main_arch_v2.pdf" type="application/pdf" width="100%" height="650px">
+<object data="{{ base_path }}/timeprove/main_arch_v2.pdf" type="application/pdf" width="100%" height="100%">
   <p>
     PDF preview not supported in your browser.
-    <a href="/timeprove/main_arch_v2.pdf">Open the architecture figure (PDF)</a>.
+    <a href="{{ base_path }}/timeprove/main_arch_v2.pdf">Open the architecture figure (PDF)</a>.
   </p>
 </object>
 
 ## OpenTSUBench (OTB) overview
 
-<object data="/timeprove/otb_overview.pdf" type="application/pdf" width="100%" height="650px">
+<object data="{{ base_path }}/timeprove/otb_overview.pdf" type="application/pdf" width="100%" height="100%">
   <p>
     PDF preview not supported in your browser.
-    <a href="/timeprove/otb_overview.pdf">Open the OTB overview figure (PDF)</a>.
+    <a href="{{ base_path }}/timeprove/otb_overview.pdf">Open the OTB overview figure (PDF)</a>.
   </p>
 </object>
 
 ## Teaser
 
-<object data="/timeprove/timeprove_teaser_emnlp26_v2.pdf" type="application/pdf" width="100%" height="650px">
+<object data="{{ base_path }}/timeprove/timeprove_teaser_emnlp26_v2.pdf" type="application/pdf" width="100%" height="100%">
   <p>
     PDF preview not supported in your browser.
-    <a href="/timeprove/timeprove_teaser_emnlp26_v2.pdf">Open the teaser (PDF)</a>.
+    <a href="{{ base_path }}/timeprove/timeprove_teaser_emnlp26_v2.pdf">Open the teaser (PDF)</a>.
   </p>
 </object>
 
