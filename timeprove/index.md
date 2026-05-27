@@ -5,9 +5,11 @@ layout: timeprove
 ---
 
 <div class="timeprove-hero">
-  <h1 class="timeprove-title"><span class="tp-sc">TimeProVe</span></h1>
+  <h1 class="timeprove-title">
+    <span class="tp-sc">TimeProVe</span>: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living
+  </h1>
   <p class="timeprove-subtitle">
-    Temporally grounded reasoning in long, untrimmed videos.
+    A cost-efficient framework for temporally grounded reasoning in long, untrimmed videos.
   </p>
 
   <div class="column has-text-centered">
@@ -60,6 +62,7 @@ Long Video Question Answering (LVQA) requires identifying sparse, query-relevant
 ## <span class="tp-sc">TimeProVe</span> framework (overview)
 
 ![TimeProVe framework overview]({{ base_path }}/timeprove/main_arch.png)
+<p class="figure-caption">Overview of <span class="tp-sc">TimeProVe</span>: ACE proposes query-conditioned answer-evidence hypotheses, and the temporal verifier validates only short selected clips with a VLM.</p>
 
 ## OpenTSUBench (OTB) overview
 
