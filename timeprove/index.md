@@ -54,31 +54,28 @@ Long Video Question Answering (LVQA) requires identifying sparse, query-relevant
   </div>
 </div>
 
-## Key idea (high level)
+## TL;DR
 
-1. Use lightweight modules to propose candidate answers paired with temporally localized evidence windows.
-2. Verify only the most promising candidates with a VLM, drastically reducing the number of expensive calls while preserving temporally grounded reasoning.
+Use lightweight modules to propose candidate answers paired with temporally localized evidence windows.
+Verify only the most promising candidates with a VLM, drastically reducing the number of expensive calls while preserving temporally grounded reasoning.
 
-## <span class="tp-sc">TimeProVe</span> framework (overview)
+## <span class="tp-sc">TimeProVe</span> framework
 
 ![TimeProVe framework overview]({{ base_path }}/timeprove/main_arch.png)
 <p class="figure-caption">ACE first builds an action timeline from the full video, then uses query-conditioned proposal generation and reranking to produce candidate answer-evidence hypotheses. A temporal verifier sends only the top short RGB clip to a VLM for confirmation, iterating to the next candidate only when needed, which preserves temporal grounding while substantially reducing expensive full-video inference.</p>
 
-## <span class="tp-sc">OpenTSUBench</span> (<span class="tp-sc">otb</span>) overview
+## <span class="tp-sc">OpenTSUBench</span> (<span class="tp-sc">otb</span>)
 
 ![OpenTSUBench (OTB) overview]({{ base_path }}/timeprove/otb_benchmark.png)
 <p class="figure-caption"><span class="tp-sc">OpenTSUBench</span> is an open-ended, temporally grounded LVQA benchmark for real-world untrimmed ADL videos, where each question is paired with supporting temporal evidence. It includes diverse strata such as temporal positioning, long-horizon sparse evidence, object-centric actions, concurrent activities, and state transitions to evaluate both answer correctness and evidence localization.</p>
 
-## BibTeX
-
-Replace the fields below once you have the final venue / arXiv ID.
-
+<!-- ## BibTeX
 ```bibtex
 @inproceedings{timeprove2026,
   title     = {{\textsc{TimeProVe}}: Temporally Grounded Reasoning in Long Videos},
   author    = {Sinha, Arkaprava and others},
-  booktitle = {Proceedings of ...},
+  booktitle = {},
   year      = {2026}
 }
-```
+``` -->
 
