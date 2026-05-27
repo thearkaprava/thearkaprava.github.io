@@ -28,30 +28,15 @@ Long Video Question Answering (LVQA) requires identifying sparse, query-relevant
 
 ## TimeProVe framework (overview)
 
-<object data="{{ base_path }}/timeprove/main_arch_v2.pdf" type="application/pdf" width="100%" height="100%">
-  <p>
-    PDF preview not supported in your browser.
-    <a href="{{ base_path }}/timeprove/main_arch_v2.pdf">Open the architecture figure (PDF)</a>.
-  </p>
-</object>
+![TimeProVe framework overview]({{ base_path }}/timeprove/main_arch.png)
 
 ## OpenTSUBench (OTB) overview
 
-<object data="{{ base_path }}/timeprove/otb_overview.pdf" type="application/pdf" width="100%" height="100%">
-  <p>
-    PDF preview not supported in your browser.
-    <a href="{{ base_path }}/timeprove/otb_overview.pdf">Open the OTB overview figure (PDF)</a>.
-  </p>
-</object>
+![OpenTSUBench (OTB) overview]({{ base_path }}/timeprove/otb_benchmark.png)
 
 ## Teaser
 
-<object data="{{ base_path }}/timeprove/timeprove_teaser_emnlp26_v2.pdf" type="application/pdf" width="100%" height="100%">
-  <p>
-    PDF preview not supported in your browser.
-    <a href="{{ base_path }}/timeprove/timeprove_teaser_emnlp26_v2.pdf">Open the teaser (PDF)</a>.
-  </p>
-</object>
+![TimeProVe teaser]({{ base_path }}/timeprove/teaset.png)
 
 ## BibTeX
 
