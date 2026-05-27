@@ -25,24 +25,41 @@ layout: compress
       font-size: 2.4rem;
       letter-spacing: 0.03em;
     }
+    .tp-sc {
+      font-variant: small-caps;
+      letter-spacing: 0.05em;
+    }
     .timeprove-subtitle {
       margin: 0 0 1.25rem 0;
       font-size: 1rem;
       color: #555;
     }
-    .timeprove-capsules {
-      display: flex;
-      justify-content: center;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-      margin-bottom: 1.75rem;
+    /* Bulma-ish helpers used by the capsule snippet */
+    .has-text-centered { text-align: center; }
+    .publication-links { margin-bottom: 1.75rem; }
+    .publication-links .link-block { display: inline-block; margin: 0 0.45rem 0.6rem 0.45rem; }
+    .publication-links .button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.15rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border: 1px solid rgba(0,0,0,0.12);
+      background: #111;
+      color: #fff !important;
+      text-decoration: none !important;
+      transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
     }
-    .timeprove-capsules .btn {
-      border-radius: 9999px;
-      padding: 0.4rem 1.3rem;
-      font-size: 0.9rem;
-      margin: 0;
+    .publication-links .button.is-rounded { border-radius: 9999px; }
+    .publication-links .button.is-dark { background: #111; }
+    .publication-links .button:hover {
+      transform: translateY(-1px);
+      background: #000;
+      border-color: rgba(0,0,0,0.18);
     }
+    .publication-links .icon { display: inline-flex; align-items: center; }
+    .publication-links .icon i { font-size: 1.1em; }
     .timeprove-page h2 {
       margin-top: 1.75rem;
       margin-bottom: 0.5rem;
@@ -58,6 +75,32 @@ layout: compress
       margin: 0.6rem 0 0.75rem 0;
       border-radius: 10px;
       border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    .abstract-grid {
+      display: grid;
+      grid-template-columns: 1.45fr 1fr;
+      gap: 1.25rem;
+      align-items: start;
+      margin-top: 0.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .abstract-grid h2 {
+      margin-top: 0;
+    }
+    .teaser-panel img {
+      margin-top: 0;
+      margin-bottom: 0.45rem;
+    }
+    .teaser-caption {
+      font-size: 0.92rem;
+      line-height: 1.45;
+      margin: 0;
+      color: #555;
+    }
+    @media (max-width: 900px) {
+      .abstract-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
