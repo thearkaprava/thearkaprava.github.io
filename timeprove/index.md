@@ -56,7 +56,7 @@ Long Video Question Answering (LVQA) requires identifying sparse, query-relevant
 
 ## TL;DR
 
-Use lightweight modules to propose candidate answers paired with temporally localized evidence windows.
+Use lightweight modules to propose candidate answers paired with temporally localized evidence windows. <br>
 Verify only the most promising candidates with a VLM, drastically reducing the number of expensive calls while preserving temporally grounded reasoning.
 
 ## <span class="tp-sc">TimeProVe</span> framework
