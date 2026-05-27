@@ -47,7 +47,7 @@ Long Video Question Answering (LVQA) requires identifying sparse, query-relevant
   </div>
 
   <div class="teaser-panel">
-    ![TimeProVe teaser]({{ base_path }}/timeprove/teaset.png)
+    <img src="{{ base_path }}/timeprove/teaset.png" alt="TimeProVe teaser" />
     <p class="teaser-caption"><span class="tp-sc">TimeProVe</span> reduces long-video LVQA cost by proposing query-relevant evidence locally before VLM verification. Instead of processing the full video, it sends only short targeted clips to the cloud VLM.</p>
   </div>
 </div>
