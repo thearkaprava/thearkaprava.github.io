@@ -8,7 +8,7 @@ date: 2026-06-01
 venue: 'Preprint'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://drive.google.com/file/d/1P6Ha9a0X4w8GVzVWUKOCoH2_Uze94lAq/view?usp=share_link'
-codeurl: ''
+# codeurl: ''
 citation: #'Sinha, Arkaprava, et al. "MS-Temba: Multi-Scale Temporal Mamba for Efficient Temporal Action Detection." arXiv preprint arXiv:2501.06138 (2025).'
 authors: '<span style="font-size: 0.8em;"><strong>Arkaprava Sinha</strong>, Dominick Reilly, Siddharth Krishnan, Hieu Le, Srijan Das</span>'
 image: #'image-alignment-300x200.jpg'
