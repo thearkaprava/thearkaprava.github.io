@@ -1,5 +1,5 @@
 ---
-title: "\textsc{UniEgo}: Proxies as Mediators for Unified Egocentric Video Representation Learning"
+title: "<span style='font-variant: small-caps;'>UniEgo</span>: Proxies as Mediators for Unified Egocentric Video Representation Learning"
 collection: publications
 category: publication
 permalink: #/publication/2009-10-01-paper-title-number-1

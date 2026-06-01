@@ -1,9 +1,9 @@
 ---
-title: "\textsc{TimeProVe}: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living"
+title: "<span style='font-variant: small-caps;'>TimeProVe</span>: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living"
 collection: publications
 category: publication
 permalink: #/publication/2009-10-01-paper-title-number-1
-excerpt: '\textsc{TimeProVe} uses lightweight modules to propose candidate answers paired with temporally localized evidence windows. Then it verifies only the most promising candidates with a VLM, drastically reducing the number of expensive calls while preserving temporally grounded reasoning.'
+excerpt: 'TimeProVe uses lightweight modules to propose candidate answers paired with temporally localized evidence windows. Then it verifies only the most promising candidates with a VLM, drastically reducing the number of expensive calls while preserving temporally grounded reasoning.'
 date: 2026-05-20
 venue: 'Preprint'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
