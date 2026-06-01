@@ -15,7 +15,7 @@ layout: timeprove
   <div class="column has-text-centered">
     <div class="publication-links">
       <span class="link-block">
-        <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+        <a href="https://drive.google.com/file/d/1P6Ha9a0X4w8GVzVWUKOCoH2_Uze94lAq/view?usp=share_link" target="_blank" class="external-link button is-normal is-rounded is-dark">
           <span class="icon">
             <i class="ai ai-arxiv"></i>
           </span>
