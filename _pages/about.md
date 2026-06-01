@@ -26,7 +26,7 @@ In parallel, I work on Vision-Language Models (VLMs) for video understanding, ex
 ## Selected Publications
 - **\textsc{TimeProVe}: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living**  
   *Preprint, 2026*  
-  **Arkaprava Sinha**, Dominick Reilly, Hieu Le, Srijan Das
+  **Arkaprava Sinha**, Dominick Reilly, Siddharth Krishnan, Hieu Le, Srijan Das
   [Paper](https://drive.google.com/file/d/1P6Ha9a0X4w8GVzVWUKOCoH2_Uze94lAq/view?usp=share_link)
 
 - **\textsc{UniEgo}: Proxies as Mediators for Unified Egocentric Video Representation Learning**  
