@@ -1,5 +1,5 @@
 ---
-title: "\textsc{TimeProVe}: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living"
+title: "\textsc{UniEgo}: Proxies as Mediators for Unified Egocentric Video Representation Learning"
 collection: publications
 category: publication
 permalink: #/publication/2009-10-01-paper-title-number-1
@@ -7,15 +7,19 @@ excerpt: ''
 date: 2026-05-20
 venue: 'Preprint'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://drive.google.com/file/d/1P6Ha9a0X4w8GVzVWUKOCoH2_Uze94lAq/view?usp=share_link'
+paperurl: 'https://drive.google.com/file/d/1b1bau_WKn6dPB2BrxCvtBkO3ZIveJKA0/view?usp=share_link'
 codeurl: ''
 citation: #'Sinha, Arkaprava, et al. "MS-Temba: Multi-Scale Temporal Mamba for Efficient Temporal Action Detection." arXiv preprint arXiv:2501.06138 (2025).'
-authors: '<span style="font-size: 0.8em;"><strong>Arkaprava Sinha</strong>, Dominick Reilly, Siddharth Krishnan, Hieu Le, Srijan Das</span>'
+authors: 'Wenhao Chi, <span style="font-size: 0.8em;"><strong>Arkaprava Sinha</strong>, Dominick Reilly, Hieu Le, Srijan Das</span>'
 image: #'image-alignment-300x200.jpg'
 ---
 
 
-[Paper](https://drive.google.com/file/d/1P6Ha9a0X4w8GVzVWUKOCoH2_Uze94lAq/view?usp=share_link), [Website](https://thearkaprava.github.io/timeprove/)
+[Paper](https://drive.google.com/file/d/1b1bau_WKn6dPB2BrxCvtBkO3ZIveJKA0/view?usp=share_link)
 
 ## Abstract:
-Long Video Question Answering (LVQA) requires identifying sparse, query-relevant evidence within hours-long untrimmed videos. Existing approaches either process videos densely with large vision-language models (VLMs), incurring prohibitive computational cost, or rely on sparse caption-based reasoning, which often misses temporally localized and motion-centric evidence. We introduce TimeProVe, a cost-efficient hybrid framework for temporally grounded reasoning in long videos. TimeProVe first employs lightweight modules to generate action-grounded answer--evidence hypotheses and subsequently invokes an expensive VLM only for targeted verification. The core of our framework lies in the Action-based Candidate Evidence (ACE) module, which converts temporally localized actions into query-conditioned candidate answers and supporting evidence windows through lightweight LLM reasoning. We further introduce OpenTSUBench (otb), an open-ended benchmark designed to evaluate temporally grounded reasoning in real-world Activities of Daily Living (ADL) scenarios. Experiments show that TimeProVe outperforms the strongest baseline on otb by 7.3%, while reducing VLM calls by 75% and inference cost by 93%. Furthermore, without explicit temporal grounding training, TimeProVe achieves competitive performance on Charades-STA, and reaches state-of-the-art results when enhanced with grounding VLMs.
+Egocentric video understanding is inherently limited by the narrow perspective of wearable cameras: a single viewpoint, a single modality, a single model cannot capture the full richness of human action. We argue that a truly expressive egocen-
+tric representation must subsume complementary knowledge across viewpoints, modalities, and foundation model representations, yet remain deployable from egocentric video alone. To this end, we introduce a hierarchical multi-teacher
+distillation framework that produces UNIEGO, a unified egocentric encoder trained with 9 teachers spanning ego-exo viewpoints, RGB, depth, and skeleton modalities, and four foundation models. Rather than distilling directly from heterogeneous teachers whose incompatible architectures and feature geometries induce conflicting gradients, our framework interposes a layer of representation-specific Proxy models that translate diverse teacher knowledge into a homogeneous egocentric space. A second distillation stage, Selective Proxy Distillation (SPD), then adaptively selects, for each training sample, the subset of proxies that are both correct and confident, distilling exclusively from reliable supervision and suppressing erroneous signals. SPD is further stabilized by initializing UNIEGO as a learned convex
+combination of proxy parameters, placing the unified model in a well-conditioned region of the loss landscape before distillation begins. UNIEGO achieves state-of-the-art performance across three egocentric video understanding tasks - action
+recognition, video retrieval, and action segmentation on three challenging ego-exo benchmarks, outperforming naive multi-teacher distillation baselines and demonstrating that structured, proxy-mediated knowledge transfer yields richer and more discriminative egocentric representations.
