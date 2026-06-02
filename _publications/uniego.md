@@ -7,14 +7,14 @@ excerpt: 'UNIEGO shows that egocentric video models need not be limited by what 
 date: 2026-05-20
 venue: 'Preprint'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://drive.google.com/file/d/1b1bau_WKn6dPB2BrxCvtBkO3ZIveJKA0/view?usp=share_link'
+paperurl: 'https://drive.google.com/file/d/1FyA6XoCqWaKjUxXlJG0knPO5ptSXpa7n/view?usp=share_link'
 # codeurl: ''
 citation: #'Sinha, Arkaprava, et al. "MS-Temba: Multi-Scale Temporal Mamba for Efficient Temporal Action Detection." arXiv preprint arXiv:2501.06138 (2025).'
 authors: 'Wenhao Chi, <span style="font-size: 0.8em;"><strong>Arkaprava Sinha</strong>, Dominick Reilly, Hieu Le, Srijan Das</span>'
 image: #'image-alignment-300x200.jpg'
 ---
 
-[Paper](https://drive.google.com/file/d/1b1bau_WKn6dPB2BrxCvtBkO3ZIveJKA0/view?usp=share_link)
+[Paper](https://drive.google.com/file/d/1FyA6XoCqWaKjUxXlJG0knPO5ptSXpa7n/view?usp=share_link)
 
 ## Abstract:
 Egocentric video understanding is inherently limited by the narrow perspective of wearable cameras: a single viewpoint, a single modality, a single model cannot capture the full richness of human action. We argue that a truly expressive egocen-
