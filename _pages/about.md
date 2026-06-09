@@ -7,14 +7,16 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am Arkaprava Sinha, a Graduate Research Assistant pursuing a Ph.D. in Computer Science at the University of North Carolina, Charlotte. I am advised by [Prof. Srijan Das](https://srijandas07.github.io). My research lies in the intersection of Vision Language Models, Video Understanding, Temporal Modeling and Multimodal Learning with a focus on building scalable and reliable algorithms for Long Video Understanding. 
+Hello! I am Arkaprava Sinha, a Graduate Research Assistant pursuing a Ph.D. in Computer Science at the University of North Carolina, Charlotte. I am advised by [Prof. Srijan Das](https://srijandas07.github.io). My research lies in the intersection of Multimodal Vision Language Models, Long Context Video Understanding, Temporal Modeling and Agentic Systems with a focus on building scalable and reliable algorithms for Long Video Understanding. 
 
 Prior to my Ph.D., I worked as a Data Scientist, where I contributed to projects in Computer Vision, Natural Language Processing, and large-scale Machine Learning systems across industry and research settings.
 
 ## Research
-My research is centered on Temporal Representation Learning for Long Video Understanding, with applications to Temporal Action Detection and Video Summarization. I develop architectures that capture long-range temporal dependencies and address challenges such as action co-occurrence, temporal boundaries, and efficient representation learning in extended video sequences.
+My research focuses on building efficient multimodal AI systems for long-horizon video understanding, egocentric perception, and visual reasoning. 
 
-In parallel, I work on Vision-Language Models (VLMs) for video understanding, exploring how multimodal inputs, such as RGB video, text, and skeleton-based motion data, can be aligned to improve contextual interpretation of human activities. I am also interested learning generalized video representation, aiming to design scalable frameworks that enhance both Action Recognition and Multimodal Video Analysis, with potential applications in Robotics and Human-Centered AI systems.
+A central theme of my work is designing scalable temporal architectures and multimodal representation learning methods that make video models more robust, efficient, and deployable. This includes state-space and sequence modeling for long videos, egocentric representation learning across viewpoints and modalities, and vision-language systems that align video, language, motion, and structured visual cues. I am also interested in agentic video understanding, where systems actively search for relevant evidence, reason over temporal context, and verify answers using multimodal foundation models rather than processing videos passively and exhaustively.
+
+More broadly, my research connects long video understanding, Vision-Language Models, Multimodal LLMs, diffusion processes, and embodied/assistive AI. My goal is to build practical AI systems that can understand, reason about, and generate complex visual content in real-world settings, with applications in robotics, human-centered AI, augmented reality, intelligent assistants, and safety-critical video analytics.
 
 ## News
 **Feb 2026** - MS-Temba accepted to CVPR 2026.  
