@@ -12,11 +12,9 @@ Hello! I am Arkaprava Sinha, a Graduate Research Assistant pursuing a Ph.D. in C
 Prior to my Ph.D., I worked as a Data Scientist, where I contributed to projects in Computer Vision, Natural Language Processing, and large-scale Machine Learning systems across industry and research settings.
 
 ## Research
-My research focuses on building efficient multimodal AI systems for long-horizon video understanding, egocentric perception, and visual reasoning. 
+My research focuses on building efficient multimodal AI systems for long-horizon video understanding, egocentric perception, and visual reasoning. I design scalable temporal architectures and representation learning methods that help models reason over long, untrimmed videos, align video with language, motion, and structured visual cues, and operate efficiently in real-world settings.
 
-A central theme of my work is designing scalable temporal architectures and multimodal representation learning methods that make video models more robust, efficient, and deployable. This includes state-space and sequence modeling for long videos, egocentric representation learning across viewpoints and modalities, and vision-language systems that align video, language, motion, and structured visual cues. I am also interested in agentic video understanding, where systems actively search for relevant evidence, reason over temporal context, and verify answers using multimodal foundation models rather than processing videos passively and exhaustively.
-
-More broadly, my research connects long video understanding, Vision-Language Models, Multimodal LLMs, diffusion processes, and embodied/assistive AI. My goal is to build practical AI systems that can understand, reason about, and generate complex visual content in real-world settings, with applications in robotics, human-centered AI, augmented reality, intelligent assistants, and safety-critical video analytics.
+I am particularly interested in agentic video understanding, where systems actively search for relevant evidence, reason over temporal context, and verify answers using multimodal foundation models instead of exhaustively processing entire videos. Broadly, my work connects long video understanding, Vision-Language Models, Multimodal LLMs, diffusion-based generation, and embodied AI, with applications in robotics, AR/VR, intelligent assistants, assistive technology, and safety-critical video analytics.
 
 ## News
 **Feb 2026** - MS-Temba accepted to CVPR 2026.  
