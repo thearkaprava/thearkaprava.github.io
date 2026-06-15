@@ -20,9 +20,8 @@ layout: timeprove
       <span class="author-block">
         <a href="https://dominickrei.github.io/" target="_blank">Dominick Reilly</a>,
       </span>
-      <br>
       <span class="author-block">
-        <a href="https://webpages.charlotte.edu/skrish21/" target="_blank">Siddharth Krishnan</a>
+        <a href="https://webpages.charlotte.edu/skrish21/" target="_blank">Siddharth Krishnan</a>,
       </span>
       <span class="author-block">
         <a href="https://hieulem.github.io" target="_blank">Hieu Le</a>,
