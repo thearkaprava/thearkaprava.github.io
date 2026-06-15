@@ -13,6 +13,28 @@ layout: timeprove
   </p>
 
   <div class="column has-text-centered">
+    <div class="is-size-5 publication-authors" style="margin-bottom: 0.75rem; text-align: center;">
+      <span class="author-block">
+        <a href="https://thearkaprava.github.io" target="_blank">Arkaprava Sinha</a>,
+      </span>
+      <span class="author-block">
+        <a href="https://dominickrei.github.io/" target="_blank">Dominick Reilly</a>,
+      </span>
+      <br>
+      <span class="author-block">
+        <a href="https://webpages.charlotte.edu/skrish21/" target="_blank">Siddharth Krishnan</a>
+      </span>
+      <span class="author-block">
+        <a href="https://hieulem.github.io" target="_blank">Hieu Le</a>,
+      </span>
+      <span class="author-block">
+        <a href="https://srijandas07.github.io" target="_blank">Srijan Das</a>
+      </span>
+    </div>
+    <div class="is-size-5 publication-authors" style="margin-bottom: 1rem; text-align: center;">
+      <span class="author-block">University of North Carolina at Charlotte</span>
+    </div>
+
     <div class="publication-links">
       <span class="link-block">
         <a href="https://drive.google.com/file/d/1P6Ha9a0X4w8GVzVWUKOCoH2_Uze94lAq/view?usp=share_link" target="_blank" class="external-link button is-normal is-rounded is-dark">
