@@ -28,13 +28,13 @@ layout: timeprove
           <span class="icon">
             <i class="fab fa-github"></i>
           </span>
-          <span>Code</span>
+          <span>Code (Coming Soon)</span>
         </a>
       </span>
 
       <span class="link-block">
         <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
-          <span>🤗 Data</span>
+          <span>🤗 Data (Coming Soon)</span>
         </a>
       </span>
     </div>
