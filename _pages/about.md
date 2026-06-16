@@ -54,7 +54,7 @@ I am particularly interested in *agentic video understanding*, where systems act
     <div class="authors"><span class="me">Arkaprava Sinha</span>, Dominick Reilly, Siddharth Krishnan, Hieu Le, Srijan Das</div>
     <div class="venue">Preprint, 2026</div>
     <div class="desc">A hybrid long-video reasoning framework that proposes action-grounded hypotheses efficiently, then verifies only sparse RGB evidence with an expensive VLM.</div>
-    <div class="links"><a href="https://drive.google.com/file/d/1P6Ha9a0X4w8GVzVWUKOCoH2_Uze94lAq/view?usp=share_link">Paper</a> / <a href="https://thearkaprava.github.io/timeprove/">Website</a></div>
+    <div class="links"><a href="https://drive.google.com/file/d/1P6Ha9a0X4w8GVzVWUKOCoH2_Uze94lAq/view?usp=share_link">Paper</a> / <a href="https://github.com/thearkaprava/TimeProVe">Code</a> / <a href="https://thearkaprava.github.io/timeprove/">Website</a></div>
   </div>
 </div>
 
