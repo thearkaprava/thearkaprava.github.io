@@ -25,22 +25,22 @@
 
 * { box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; font-size: 17.5px; }
 
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
   font-family: "EB Garamond", Georgia, "Times New Roman", serif;
-  font-size: 21px;
+  font-size: 1.38rem;
   line-height: 1.6;
   transition: background-color .25s ease, color .25s ease;
 }
 
 .wrap {
-  max-width: 720px;
+  max-width: 920px;
   margin: 0 auto;
-  padding: 2.2rem 1.4rem 4rem;
+  padding: 2.4rem 1.6rem 4.5rem;
 }
 
 /* ---------- links ---------- */
@@ -69,10 +69,10 @@ a:hover { color: var(--accent-h); border-bottom-color: currentColor; }
 .intro {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.4rem;
   margin-bottom: 1.2rem;
 }
-.intro-text { flex: 1 1 auto; min-width: 0; }
+.intro-text { flex: 0 1 auto; min-width: 0; }
 .intro .photo {
   flex: 0 0 auto;
   width: 185px;
@@ -151,7 +151,7 @@ p { margin: .7rem 0; }
 
 /* ---------- publications ---------- */
 .pub { margin: 1.6rem 0; display: flex; gap: 1.6rem; align-items: center; }
-.pub .thumb { flex: 0 0 250px; height: 185px; }
+.pub .thumb { flex: 0 0 290px; height: 215px; }
 .pub .thumb img,
 .pub .thumb video {
   width: 100%;
