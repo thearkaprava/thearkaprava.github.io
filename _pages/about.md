@@ -65,7 +65,7 @@ I am particularly interested in *agentic video understanding*, where systems act
     <div class="authors">Wenhao Chi, <span class="me">Arkaprava Sinha</span>, Dominick Reilly, Hieu Le, Srijan Das</div>
     <div class="venue">Preprint, 2026</div>
     <div class="desc">A unified egocentric encoder trained via hierarchical distillation across ego-exo viewpoints, modalities, and foundation models, using representation-specific proxies as mediators.</div>
-    <div class="links"><a href="https://drive.google.com/file/d/1FyA6XoCqWaKjUxXlJG0knPO5ptSXpa7n/view?usp=share_link">Paper</a></div>
+    <div class="links"><a href="https://drive.google.com/file/d/1FyA6XoCqWaKjUxXlJG0knPO5ptSXpa7n/view?usp=share_link">Paper</a> / <a href="https://github.com/Wenhao-Chi/UNIEGO">Code</a></div>
   </div>
 </div>
 
