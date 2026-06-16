@@ -45,11 +45,11 @@ layout: timeprove
       </span>
 
       <span class="link-block">
-        <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+        <a href="https://github.com/thearkaprava/TimeProVe" target="_blank" class="external-link button is-normal is-rounded is-dark">
           <span class="icon">
             <i class="fab fa-github"></i>
           </span>
-          <span>Code (Coming Soon)</span>
+          <span>Code</span>
         </a>
       </span>
 
