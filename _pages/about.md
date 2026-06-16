@@ -18,7 +18,6 @@ redirect_from:
       <i class="ai ai-google-scholar"></i><a href="https://scholar.google.com/citations?user=igxv5JYAAAAJ&hl=en">Scholar</a><span class="sep">/</span>
       <i class="fab fa-github"></i><a href="https://github.com/thearkaprava">GitHub</a><span class="sep">/</span>
       <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/arkaprava-sinha">LinkedIn</a><span class="sep">/</span>
-      <i class="fab fa-x-twitter"></i><a href="https://twitter.com/_Arkaprava_">Twitter</a><span class="sep">/</span>
       <i class="fas fa-file-pdf"></i><a href="{{ base_path }}/files/Arkaprava_Sinha_CV.pdf">CV</a>
     </p>
   </div>
