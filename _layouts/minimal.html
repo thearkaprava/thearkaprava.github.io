@@ -1,0 +1,55 @@
+---
+layout: compress
+---
+{% include base_path %}
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: 'en' }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="author" content="{{ site.name }}">
+  <link rel="stylesheet" href="{{ base_path }}/assets/css/clean.css">
+  {% include head/custom.html %}
+</head>
+
+<body>
+  <button id="theme-toggle" type="button" aria-label="Toggle dark mode" onclick="toggleTheme()">
+    <i class="fas fa-moon" id="theme-toggle-icon" aria-hidden="true"></i>
+  </button>
+
+  <main class="wrap">
+    <nav class="topnav">
+      <a href="{{ base_path }}/"{% if page.url == '/' %} class="here"{% endif %}>Home</a>
+      <span>·</span>
+      <a href="{{ base_path }}/publications/"{% if page.url contains 'publication' %} class="here"{% endif %}>Publications</a>
+      <span>·</span>
+      <a href="{{ base_path }}/cv/"{% if page.url contains 'cv' %} class="here"{% endif %}>CV</a>
+    </nav>
+
+    {{ content }}
+
+    <footer class="site-footer">
+      © {{ site.time | date: "%Y" }} {{ site.name }}. Built with Jekyll.
+    </footer>
+  </main>
+
+  <script>
+    function updateIcon(t) {
+      var i = document.getElementById('theme-toggle-icon');
+      if (i) i.className = (t === 'dark') ? 'fas fa-sun' : 'fas fa-moon';
+    }
+    function toggleTheme() {
+      var cur = document.documentElement.getAttribute('data-theme');
+      var next = (cur === 'dark') ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      updateIcon(next);
+    }
+    updateIcon(document.documentElement.getAttribute('data-theme'));
+  </script>
+</body>
+
+</html>

@@ -2,148 +2,35 @@
 
 <!-- start custom head snippets -->
 
-<!-- Use SVG favicon -->
+<!-- Favicon -->
 <link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg">
-<link rel="shortcut icon" href="{{ base_path }}/images/favicon.svg">
-
-<!-- Remove all other favicon references -->
-<meta name="theme-color" content="#ffffff">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1a1a1a">
-
-<link rel="apple-touch-icon" sizes="60x60" href="{{ base_path }}/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="72x72" href="{{ base_path }}/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="76x76" href="{{ base_path }}/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="114x114" href="{{ base_path }}/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="120x120" href="{{ base_path }}/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="144x144" href="{{ base_path }}/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
-<link rel="apple-touch-icon" sizes="152x152" href="{{ base_path }}/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="shortcut icon" href="{{ base_path }}/images/favicon.ico">
+<meta name="theme-color" content="#fffefb">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121212">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
-<link rel="icon" type="image/png" href="{{ base_path }}/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
-<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon.svg?v=M44lzPylqQ" sizes="96x96">
-<link rel="manifest" href="{{ base_path }}/images/manifest.json?v=M44lzPylqQ">
-<link rel="mask-icon" href="{{ base_path }}/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
-<meta name="msapplication-TileColor" content="#000000">
-<meta name="msapplication-TileImage" content="{{ base_path }}/images/mstile-144x144.png?v=M44lzPylqQ">
-<meta name="msapplication-config" content="{{ base_path }}/images/browserconfig.xml?v=M44lzPylqQ">
 
-<!-- Add Font Awesome -->
+<!-- Fonts: EB Garamond (old-school serif) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<!-- Add Academicons -->
+<!-- Academicons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-<!-- Support for MatJax -->
+<!-- MathJax -->
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<!-- Theme toggle button -->
-<div id="theme-toggle" style="position: fixed; top: 1em; right: 1em; z-index: 1000;">
-    <button onclick="toggleTheme()" style="background: none; border: none; padding: 8px; cursor: pointer;">
-        <i class="fas fa-sun" id="theme-toggle-icon" style="font-size: 20px;"></i>
-    </button>
-</div>
-
-<!-- Theme styles -->
-<style>
-    :root {
-        --bg-color: #ffffff;
-        --text-color: #000000;
-        --link-color: #0366d6;
-        --masthead-bg: #f5f5f5;
-        --social-icon-color: #000000;
-        --heading-color: #000000;
-    }
-
-    [data-theme="dark"] {
-        --bg-color: #1a1a1a;
-        --text-color: #ffffff;
-        --link-color: #ffd700;
-        --masthead-bg: #2d2d2d;
-        --social-icon-color: #ffffff;
-        --heading-color: #ffffff;
-    }
-
-    body {
-        background-color: var(--bg-color);
-        color: var(--text-color);
-        transition: background-color 0.3s, color 0.3s;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: var(--heading-color);
-    }
-
-    .page__content {
-        color: var(--text-color);
-    }
-
-    #theme-toggle-icon {
-        color: var(--text-color);
-        transition: color 0.3s;
-    }
-
-    a {
-        color: var(--link-color) !important;
-        transition: color 0.3s;
-    }
-
-    .masthead {
-        background-color: var(--masthead-bg) !important;
-        transition: background-color 0.3s;
-    }
-
-    .author__urls-wrapper i.fa,
-    .author__urls-wrapper i.fab,
-    .author__urls-wrapper i.fas,
-    .author__urls-wrapper i.ai {
-        color: var(--social-icon-color) !important;
-        transition: color 0.3s;
-    }
-</style>
-
-<!-- Theme toggle script -->
+<!-- Set theme before paint to avoid flash -->
 <script>
-    function initTheme() {
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const savedTheme = localStorage.getItem('theme');
-        const theme = savedTheme || (prefersDark ? 'dark' : 'light');
-
-        document.documentElement.setAttribute('data-theme', theme);
-        updateIcon(theme === 'dark');
-    }
-
-    function updateIcon(isDark) {
-        const icon = document.getElementById('theme-toggle-icon');
-        if (icon) {
-            icon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
-        }
-    }
-
-    function toggleTheme() {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-        document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateIcon(newTheme === 'dark');
-    }
-
-    // Initialize theme when DOM is ready
-    document.addEventListener('DOMContentLoaded', initTheme);
-
-    // Handle system theme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        if (!localStorage.getItem('theme')) {
-            const newTheme = e.matches ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-theme', newTheme);
-            updateIcon(e.matches);
-        }
-    });
+  (function () {
+    var saved = localStorage.getItem('theme');
+    var theme = saved || 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
 </script>
 
 <!-- end custom head snippets -->

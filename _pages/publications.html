@@ -1,72 +1,52 @@
 ---
-layout: archive
+layout: minimal
 title: "Publications"
 permalink: /publications/
-author_profile: true
+description: "Publications by Arkaprava Sinha."
 ---
-
-<style>
-  /* Adjust the main content area */
-  .archive {
-    width: calc(100% - 200px);
-    margin-left: auto;
-    padding-right: 0;
-    float: right;
-  }
-
-  /* Container for publication items */
-  .archive__item {
-    max-width: none;
-    margin-right: 0;
-    width: 100%;
-  }
-
-  /* Force wider content */
-  .archive__item-title,
-  .archive__item-excerpt {
-    width: 100%;
-    max-width: none;
-  }
-
-  /* Responsive design for mobile */
-  @media screen and (max-width: 600px) {
-    .archive {
-      width: 100%;
-      padding-right: 0;
-      float: none;
-    }
-
-    .archive__item {
-      margin-right: 0;
-    }
-  }
-</style>
-
-{% if site.author.googlescholar %}
-<div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar
-    profile</a>.</div>
-{% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-{% for category in site.publication_category %}
-{% assign title_shown = false %}
-{% for post in site.publications reversed %}
-{% if post.category != category[0] %}
-{% continue %}
+<h1 style="font-size:1.9rem;font-weight:600;margin:0 0 .3rem;color:var(--name);">Publications</h1>
+
+{% if site.author.googlescholar %}
+<p style="color:var(--muted);">For the most up-to-date list, see my <a href="{{ site.author.googlescholar }}">Google Scholar profile</a>.</p>
 {% endif %}
-{% unless title_shown %}
+
+{% if site.publication_category %}
+  {% for category in site.publication_category %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}{% continue %}{% endif %}
+      {% unless title_shown %}
 <h2>{{ category[1].title }}</h2>
-<hr />
-{% assign title_shown = true %}
-{% endunless %}
-{% include archive-single.html %}
-{% endfor %}
-{% endfor %}
+        {% assign title_shown = true %}
+      {% endunless %}
+      <div class="pub">
+        {% if post.image %}
+        <div class="thumb"><img src="{{ base_path }}/images/{{ post.image }}" alt=""></div>
+        {% endif %}
+        <div class="body">
+          <div class="title">{% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}</div>
+          {% if post.authors %}<div class="authors">{{ post.authors }}</div>{% endif %}
+          {% if post.venue %}<div class="venue">{{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</div>{% endif %}
+          <div class="links">
+            {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+            {% if post.codeurl %} / <a href="{{ post.codeurl }}">Code</a>{% endif %}
+            {% if post.slidesurl %} / <a href="{{ post.slidesurl }}">Slides</a>{% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  {% endfor %}
 {% else %}
-{% for post in site.publications reversed %}
-{% include archive-single.html %}
-{% endfor %}
+  {% for post in site.publications reversed %}
+      <div class="pub">
+        <div class="body">
+          <div class="title">{% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}</div>
+          {% if post.authors %}<div class="authors">{{ post.authors }}</div>{% endif %}
+          {% if post.venue %}<div class="venue">{{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</div>{% endif %}
+        </div>
+      </div>
+  {% endfor %}
 {% endif %}
