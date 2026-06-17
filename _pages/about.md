@@ -21,7 +21,7 @@ redirect_from:
       <i class="fas fa-file-pdf"></i><a href="{{ base_path }}/files/Arkaprava_Sinha_CV.pdf">CV</a>
     </p>
   </div>
-  <img class="photo" src="{{ base_path }}/images/profile_pic.png" alt="Arkaprava Sinha">
+  <img class="photo" src="{{ base_path }}/images/profile_AS.jpeg" alt="Arkaprava Sinha">
 </div>
 
 I am a Graduate Research Assistant pursuing a Ph.D. in Computer Science at the [University of North Carolina at Charlotte](https://cci.charlotte.edu), advised by [Prof. Srijan Das](https://srijandas07.github.io). My research lies at the intersection of multimodal vision-language models, long-context video understanding, temporal modeling, and agentic systems, with a focus on building scalable and reliable algorithms for long video understanding.
