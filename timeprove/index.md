@@ -54,8 +54,8 @@ layout: timeprove
       </span>
 
       <span class="link-block">
-        <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
-          <span>🤗 Data (Coming Soon)</span>
+        <a href="https://huggingface.co/datasets/thearkaprava/OpenTSUBench/tree/main" target="_blank" class="external-link button is-normal is-rounded is-dark">
+          <span>🤗 Data</span>
         </a>
       </span>
     </div>
