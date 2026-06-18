@@ -21,7 +21,7 @@ redirect_from:
       <i class="fas fa-file-pdf"></i><a href="{{ base_path }}/files/Arkaprava_Sinha_CV.pdf">CV</a>
     </p>
   </div>
-  <img class="photo" src="{{ base_path }}/images/profile_AS.jpeg" alt="Arkaprava Sinha">
+  <img class="photo" src="{{ base_path }}/images/profile_AS.jpeg" alt="Arkaprava Sinha" width="500" height="667" fetchpriority="high">
 </div>
 
 I am a Graduate Research Assistant pursuing a Ph.D. in Computer Science at the [University of North Carolina at Charlotte](https://cci.charlotte.edu), advised by [Prof. Srijan Das](https://srijandas07.github.io). My research lies at the intersection of multimodal vision-language models, long-context video understanding, temporal modeling, and agentic systems, with a focus on building scalable and reliable algorithms for long video understanding.
@@ -92,7 +92,7 @@ I am particularly interested in *agentic video understanding*, where systems act
 </div>
 
 <div class="pub">
-  <div class="thumb"><img src="{{ base_path }}/images/papers/ski-models.png" alt="SKI Models" loading="lazy" onerror="this.closest('.thumb').style.display='none'"></div>
+  <div class="thumb"><img src="{{ base_path }}/images/papers/ski-models.jpg" alt="SKI Models" loading="lazy" onerror="this.closest('.thumb').style.display='none'"></div>
   <div class="body">
     <div class="title"><a href="https://arxiv.org/abs/2502.03459">SKI Models: Skeleton Induced Vision-Language Embeddings for Understanding Activities of Daily Living</a></div>
     <div class="authors"><span class="me">Arkaprava Sinha</span>, Dominick Reilly, Francois Bremond, Pu Wang, Srijan Das</div>

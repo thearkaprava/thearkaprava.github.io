@@ -70,7 +70,7 @@ Long Video Question Answering (LVQA) requires identifying sparse, query-relevant
   </div>
 
   <div class="teaser-panel">
-    <img src="{{ base_path }}/timeprove/teaset.png" alt="TimeProVe teaser" />
+    <img src="{{ base_path }}/timeprove/teaset.jpg" alt="TimeProVe teaser" width="1200" height="1157" loading="eager" />
     <p class="teaser-caption"><span class="tp-sc">TimeProVe</span> reduces long-video LVQA cost by proposing query-relevant evidence locally before VLM verification. Instead of processing the full video, it sends only short targeted clips to the cloud VLM.</p>
   </div>
 </div>
@@ -82,12 +82,12 @@ Verify only the most promising candidates with a VLM, drastically reducing the n
 
 ## <span class="tp-sc">TimeProVe</span> framework
 
-![TimeProVe framework overview]({{ base_path }}/timeprove/main_arch.png)
+<img src="{{ base_path }}/timeprove/main_arch.jpg" alt="TimeProVe framework overview" width="1400" height="682" loading="lazy" />
 <p class="figure-caption">ACE first builds an action timeline from the full video, then uses query-conditioned proposal generation and reranking to produce candidate answer-evidence hypotheses. A temporal verifier sends only the top short RGB clip to a VLM for confirmation, iterating to the next candidate only when needed, which preserves temporal grounding while substantially reducing expensive full-video inference.</p>
 
 ## <span class="tp-sc">OpenTSUBench</span> (<span class="tp-sc">otb</span>)
 
-![OpenTSUBench (OTB) overview]({{ base_path }}/timeprove/otb_benchmark.png)
+<img src="{{ base_path }}/timeprove/otb_benchmark.jpg" alt="OpenTSUBench (OTB) overview" width="1400" height="675" loading="lazy" />
 <p class="figure-caption"><span class="tp-sc">OpenTSUBench</span> is an open-ended, temporally grounded LVQA benchmark for real-world untrimmed ADL videos, where each question is paired with supporting temporal evidence. It includes diverse strata such as temporal positioning, long-horizon sparse evidence, object-centric actions, concurrent activities, and state transitions to evaluate both answer correctness and evidence localization.</p>
 
 <!-- ## BibTeX
