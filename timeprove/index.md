@@ -90,6 +90,15 @@ Verify only the most promising candidates with a VLM, drastically reducing the n
 <img src="{{ base_path }}/timeprove/otb_benchmark.jpg" alt="OpenTSUBench (OTB) overview" width="1400" height="675" loading="lazy" />
 <p class="figure-caption"><span class="tp-sc">OpenTSUBench</span> is an open-ended, temporally grounded LVQA benchmark for real-world untrimmed ADL videos, where each question is paired with supporting temporal evidence. It includes diverse strata such as temporal positioning, long-horizon sparse evidence, object-centric actions, concurrent activities, and state transitions to evaluate both answer correctness and evidence localization.</p>
 
+## Qualitative Examples
+
+<div style="display: flex; justify-content: center; margin: 1.5rem 0;">
+  <video width="720" height="720" controls playsinline preload="metadata" style="max-width: 100%; border-radius: 8px;">
+    <source src="{{ base_path }}/timeprove/assets/TimeProVe_demo_P02T01C06.mp4" type="video/mp4">
+  </video>
+</div>
+<p class="figure-caption"><span class="tp-sc">TimeProVe</span> localizes sparse temporal evidence from a long ADL video and verifies query-relevant clips using a VLM, avoiding full-video processing.</p>
+
 <!-- ## BibTeX
 ```bibtex
 @inproceedings{timeprove2026,
