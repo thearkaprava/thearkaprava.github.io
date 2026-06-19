@@ -49,7 +49,7 @@ layout: timeprove
           <span class="icon">
             <i class="fab fa-github"></i>
           </span>
-          <span>Code (Coming Soon)</span>
+          <span>Code</span>
         </a>
       </span>
 
