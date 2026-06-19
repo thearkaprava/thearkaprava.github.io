@@ -101,7 +101,7 @@ Verify only the most promising candidates with a VLM, drastically reducing the n
 
 ## BibTeX
 ```bibtex
-@misc{sinha2026timeproveproposeverifyefficient,
+@misc{sinha2026timeprove,
       title={TimeProVe: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living}, 
       author={Arkaprava Sinha and Dominick Reilly and Siddharth Krishnan and Hieu Le and Srijan Das},
       year={2026},
