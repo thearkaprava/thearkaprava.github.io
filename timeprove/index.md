@@ -94,22 +94,22 @@ Verify only the most promising candidates with a VLM, drastically reducing the n
 
 <div class="demo-video-grid">
   <div class="demo-video-panel">
-    <video class="timeprove-demo-video" autoplay loop muted playsinline preload="auto">
+    <video class="timeprove-demo-video" width="1000" height="1000" autoplay loop muted playsinline preload="auto">
       <source src="{{ base_path }}/timeprove/assets/TimeProVe_demo_P02T01C06.mp4" type="video/mp4">
     </video>
   </div>
   <div class="demo-video-panel">
-    <video class="timeprove-demo-video" autoplay loop muted playsinline preload="auto">
+    <video class="timeprove-demo-video" width="760" height="840" autoplay loop muted playsinline preload="auto">
       <source src="{{ base_path }}/timeprove/assets/TimeProVe_demo_P02T04C04_c092.mp4" type="video/mp4">
     </video>
   </div>
   <div class="demo-video-panel">
-    <video class="timeprove-demo-video" autoplay loop muted playsinline preload="auto">
+    <video class="timeprove-demo-video" width="760" height="814" autoplay loop muted playsinline preload="auto">
       <source src="{{ base_path }}/timeprove/assets/TimeProVe_demo_P02T07C04_c138.mp4" type="video/mp4">
     </video>
   </div>
   <div class="demo-video-panel">
-    <video class="timeprove-demo-video" autoplay loop muted playsinline preload="auto">
+    <video class="timeprove-demo-video" width="760" height="814" autoplay loop muted playsinline preload="auto">
       <source src="{{ base_path }}/timeprove/assets/TimeProVe_demo_P10T02C05_c136.mp4" type="video/mp4">
     </video>
   </div>
