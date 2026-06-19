@@ -36,7 +36,7 @@ layout: timeprove
 
     <div class="publication-links">
       <span class="link-block">
-        <a href="https://drive.google.com/file/d/1P6Ha9a0X4w8GVzVWUKOCoH2_Uze94lAq/view?usp=share_link" target="_blank" class="external-link button is-normal is-rounded is-dark">
+        <a href="https://arxiv.org/abs/2606.20561" target="_blank" class="external-link button is-normal is-rounded is-dark">
           <span class="icon">
             <i class="ai ai-arxiv"></i>
           </span>
@@ -99,13 +99,16 @@ Verify only the most promising candidates with a VLM, drastically reducing the n
 </div>
 <p class="figure-caption"><span class="tp-sc">TimeProVe</span> localizes sparse temporal evidence from a long ADL video and verifies query-relevant clips using a VLM, avoiding full-video processing.</p>
 
-<!-- ## BibTeX
+## BibTeX
 ```bibtex
-@inproceedings{timeprove2026,
-  title     = {{\textsc{TimeProVe}}: Temporally Grounded Reasoning in Long Videos},
-  author    = {Sinha, Arkaprava and others},
-  booktitle = {},
-  year      = {2026}
+@misc{sinha2026timeproveproposeverifyefficient,
+      title={TimeProVe: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living}, 
+      author={Arkaprava Sinha and Dominick Reilly and Siddharth Krishnan and Hieu Le and Srijan Das},
+      year={2026},
+      eprint={2606.20561},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2606.20561}, 
 }
-``` -->
+```
 
