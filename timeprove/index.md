@@ -100,15 +100,19 @@ Verify only the most promising candidates with a VLM, drastically reducing the n
 <p class="figure-caption"><span class="tp-sc">TimeProVe</span> localizes sparse temporal evidence from a long ADL video and verifies query-relevant clips using a VLM, avoiding full-video processing.</p>
 
 ## BibTeX
-```bibtex
-@misc{sinha2026timeprove,
-      title={TimeProVe: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living}, 
+
+<div class="bibtex-block">
+  <button type="button" class="bibtex-copy-btn" data-copy-target="timeprove-bibtex" aria-label="Copy BibTeX to clipboard">
+    <i class="fa-regular fa-copy"></i> Copy
+  </button>
+  <pre class="bibtex-code"><code id="timeprove-bibtex">@misc{sinha2026timeprove,
+      title={TimeProVe: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living},
       author={Arkaprava Sinha and Dominick Reilly and Siddharth Krishnan and Hieu Le and Srijan Das},
       year={2026},
       eprint={2606.20561},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2606.20561}, 
-}
-```
+      url={https://arxiv.org/abs/2606.20561},
+}</code></pre>
+</div>
 
