@@ -202,6 +202,15 @@ layout: compress
 
   {% include scripts.html %}
   <script>
+    document.querySelectorAll(".timeprove-demo-video").forEach(function (video) {
+      video.addEventListener("loadeddata", function () {
+        video.play().catch(function () {});
+      });
+      if (video.readyState >= 2) {
+        video.play().catch(function () {});
+      }
+    });
+
     document.querySelectorAll(".bibtex-copy-btn").forEach(function (button) {
       button.addEventListener("click", function () {
         var targetId = button.getAttribute("data-copy-target");

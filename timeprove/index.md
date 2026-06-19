@@ -93,7 +93,7 @@ Verify only the most promising candidates with a VLM, drastically reducing the n
 ## Qualitative Examples
 
 <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-  <video width="720" height="720" controls playsinline preload="metadata" style="max-width: 100%; border-radius: 8px;">
+  <video class="timeprove-demo-video" width="1440" height="1440" autoplay loop muted playsinline preload="auto" style="max-width: 100%; border-radius: 8px;">
     <source src="{{ base_path }}/timeprove/assets/TimeProVe_demo_P02T01C06.mp4" type="video/mp4">
   </video>
 </div>
