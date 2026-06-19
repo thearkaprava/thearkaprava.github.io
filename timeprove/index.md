@@ -92,10 +92,27 @@ Verify only the most promising candidates with a VLM, drastically reducing the n
 
 ## Qualitative Examples
 
-<div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-  <video class="timeprove-demo-video" width="1440" height="1440" autoplay loop muted playsinline preload="auto" style="max-width: 100%; border-radius: 8px;">
-    <source src="{{ base_path }}/timeprove/assets/TimeProVe_demo_P02T01C06.mp4" type="video/mp4">
-  </video>
+<div class="demo-video-grid">
+  <div class="demo-video-panel">
+    <video class="timeprove-demo-video" autoplay loop muted playsinline preload="auto">
+      <source src="{{ base_path }}/timeprove/assets/TimeProVe_demo_P02T01C06.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="demo-video-panel">
+    <video class="timeprove-demo-video" autoplay loop muted playsinline preload="auto">
+      <source src="{{ base_path }}/timeprove/assets/TimeProVe_demo_P02T04C04_c092.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="demo-video-panel">
+    <video class="timeprove-demo-video" autoplay loop muted playsinline preload="auto">
+      <source src="{{ base_path }}/timeprove/assets/TimeProVe_demo_P02T07C04_c138.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="demo-video-panel">
+    <video class="timeprove-demo-video" autoplay loop muted playsinline preload="auto">
+      <source src="{{ base_path }}/timeprove/assets/TimeProVe_demo_P10T02C05_c136.mp4" type="video/mp4">
+    </video>
+  </div>
 </div>
 <p class="figure-caption"><span class="tp-sc">TimeProVe</span> localizes sparse temporal evidence from a long ADL video and verifies query-relevant clips using a VLM, avoiding full-video processing.</p>
 
