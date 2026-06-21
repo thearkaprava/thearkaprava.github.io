@@ -50,22 +50,22 @@ I am particularly interested in *agentic video understanding*, where systems act
 <div class="pub">
   <div class="thumb"><img src="{{ base_path }}/images/papers/timeprove.png" alt="TimeProVe" loading="lazy" onerror="this.closest('.thumb').style.display='none'"></div>
   <div class="body">
-    <div class="title"><a href="https://drive.google.com/file/d/1P6Ha9a0X4w8GVzVWUKOCoH2_Uze94lAq/view?usp=share_link"><span class="sc">TimeProVe</span>: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living</a></div>
+    <div class="title"><a href="https://arxiv.org/abs/2606.20561"><span class="sc">TimeProVe</span>: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living</a></div>
     <div class="authors"><span class="me">Arkaprava Sinha</span>, Dominick Reilly, Siddharth Krishnan, Hieu Le, Srijan Das</div>
     <div class="venue">Preprint, 2026</div>
     <div class="desc">A hybrid long-video reasoning framework that proposes action-grounded hypotheses efficiently, then verifies only sparse RGB evidence with an expensive VLM.</div>
-    <div class="links"><a href="https://drive.google.com/file/d/1P6Ha9a0X4w8GVzVWUKOCoH2_Uze94lAq/view?usp=share_link">Paper</a> / <a href="https://github.com/thearkaprava/TimeProVe">Code</a> / <a href="https://thearkaprava.github.io/timeprove/">Website</a></div>
+    <div class="links"><a href="https://arxiv.org/abs/2606.20561">Paper</a> / <a href="https://github.com/thearkaprava/TimeProVe">Code</a> / <a href="https://thearkaprava.github.io/timeprove/">Website</a></div>
   </div>
 </div>
 
 <div class="pub">
   <div class="thumb"><img src="{{ base_path }}/images/papers/uniego.png" alt="UniEgo" loading="lazy" onerror="this.closest('.thumb').style.display='none'"></div>
   <div class="body">
-    <div class="title"><a href="https://drive.google.com/file/d/1FyA6XoCqWaKjUxXlJG0knPO5ptSXpa7n/view?usp=share_link"><span class="sc">UniEgo</span>: Proxies as Mediators for Unified Egocentric Video Representation Learning</a></div>
+    <div class="title"><a href="https://arxiv.org/abs/2606.20559"><span class="sc">UniEgo</span>: Proxies as Mediators for Unified Egocentric Video Representation Learning</a></div>
     <div class="authors">Wenhao Chi, <span class="me">Arkaprava Sinha</span>, Dominick Reilly, Hieu Le, Srijan Das</div>
     <div class="venue">Preprint, 2026</div>
     <div class="desc">A unified egocentric encoder trained via hierarchical distillation across ego-exo viewpoints, modalities, and foundation models, using representation-specific proxies as mediators.</div>
-    <div class="links"><a href="https://drive.google.com/file/d/1FyA6XoCqWaKjUxXlJG0knPO5ptSXpa7n/view?usp=share_link">Paper</a> / <a href="https://github.com/Wenhao-Chi/UNIEGO">Code</a></div>
+    <div class="links"><a href="https://arxiv.org/abs/2606.20559">Paper</a> / <a href="https://github.com/Wenhao-Chi/UNIEGO">Code</a></div>
   </div>
 </div>
 
