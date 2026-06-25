@@ -4,6 +4,9 @@ permalink: /timeprove/
 layout: timeprove
 ---
 
+<section class="tp-section">
+  <div class="tp-section-inner">
+
 <div class="timeprove-hero">
   <h1 class="timeprove-title">
     <span class="tp-sc">TimeProVe</span>: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living
@@ -62,6 +65,12 @@ layout: timeprove
   </div>
 </div>
 
+  </div>
+</section>
+
+<section class="tp-section">
+  <div class="tp-section-inner">
+
 <div class="abstract-grid">
   <div>
     <h2>Abstract</h2>
@@ -75,20 +84,44 @@ Long Video Question Answering (LVQA) requires identifying sparse, query-relevant
   </div>
 </div>
 
+  </div>
+</section>
+
+<section class="tp-section">
+  <div class="tp-section-inner">
+
 ## TL;DR
 
 Use lightweight modules to propose candidate answers paired with temporally localized evidence windows. <br>
 Verify only the most promising candidates with a VLM, drastically reducing the number of expensive calls while preserving temporally grounded reasoning.
+
+  </div>
+</section>
+
+<section class="tp-section">
+  <div class="tp-section-inner">
 
 ## <span class="tp-sc">TimeProVe</span> framework
 
 <img src="{{ base_path }}/timeprove/main_arch.jpg" alt="TimeProVe framework overview" width="1400" height="682" loading="lazy" />
 <p class="figure-caption">ACE first builds an action timeline from the full video, then uses query-conditioned proposal generation and reranking to produce candidate answer-evidence hypotheses. A temporal verifier sends only the top short RGB clip to a VLM for confirmation, iterating to the next candidate only when needed, which preserves temporal grounding while substantially reducing expensive full-video inference.</p>
 
+  </div>
+</section>
+
+<section class="tp-section">
+  <div class="tp-section-inner">
+
 ## <span class="tp-sc">OpenTSUBench</span> (<span class="tp-sc">otb</span>)
 
 <img src="{{ base_path }}/timeprove/otb_benchmark.jpg" alt="OpenTSUBench (OTB) overview" width="1400" height="675" loading="lazy" />
 <p class="figure-caption"><span class="tp-sc">OpenTSUBench</span> is an open-ended, temporally grounded LVQA benchmark for real-world untrimmed ADL videos, where each question is paired with supporting temporal evidence. It includes diverse strata such as temporal positioning, long-horizon sparse evidence, object-centric actions, concurrent activities, and state transitions to evaluate both answer correctness and evidence localization.</p>
+
+  </div>
+</section>
+
+<section class="tp-section">
+  <div class="tp-section-inner">
 
 ## Qualitative Examples
 
@@ -116,6 +149,12 @@ Verify only the most promising candidates with a VLM, drastically reducing the n
 </div>
 <p class="figure-caption"><span class="tp-sc">TimeProVe</span> localizes sparse temporal evidence from a long ADL video and verifies query-relevant clips using a VLM, avoiding full-video processing.</p>
 
+  </div>
+</section>
+
+<section class="tp-section">
+  <div class="tp-section-inner">
+
 ## BibTeX
 
 <div class="bibtex-block">
@@ -133,3 +172,5 @@ Verify only the most promising candidates with a VLM, drastically reducing the n
 }</code></pre>
 </div>
 
+  </div>
+</section>
