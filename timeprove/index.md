@@ -74,8 +74,7 @@ layout: timeprove
 <div class="abstract-grid">
   <div>
     <h2>Abstract</h2>
-
-Long Video Question Answering (LVQA) requires identifying sparse, query-relevant evidence within hours-long untrimmed videos. Existing approaches either process videos densely with large vision-language models (VLMs), incurring prohibitive computational cost, or rely on sparse caption-based reasoning, which often misses temporally localized and motion-centric evidence. We introduce <span class="tp-sc">TimeProVe</span>, a cost-efficient hybrid framework for temporally grounded reasoning in long videos. <span class="tp-sc">TimeProVe</span> first employs lightweight modules to generate action-grounded answer--evidence hypotheses and subsequently invokes an expensive VLM only for targeted verification. The core of our framework lies in the Action-based Candidate Evidence (ACE) module, which converts temporally localized actions into query-conditioned candidate answers and supporting evidence windows through lightweight LLM reasoning. We further introduce <span class="tp-sc">OpenTSUBench</span> (<span class="tp-sc">otb</span>), an open-ended benchmark designed to evaluate temporally grounded reasoning in real-world Activities of Daily Living (ADL) scenarios. Experiments show that <span class="tp-sc">TimeProVe</span> outperforms the strongest baseline on <span class="tp-sc">otb</span> by 7.3%, while reducing VLM calls by 75% and inference cost by 93%. Furthermore, without explicit temporal grounding training, <span class="tp-sc">TimeProVe</span> achieves competitive performance on Charades-STA, and reaches state-of-the-art results when enhanced with grounding VLMs.
+    <p>Long Video Question Answering (LVQA) requires identifying sparse, query-relevant evidence within hours-long untrimmed videos. Existing approaches either process videos densely with large vision-language models (VLMs), incurring prohibitive computational cost, or rely on sparse caption-based reasoning, which often misses temporally localized and motion-centric evidence. We introduce <span class="tp-sc">TimeProVe</span>, a cost-efficient hybrid framework for temporally grounded reasoning in long videos. <span class="tp-sc">TimeProVe</span> first employs lightweight modules to generate action-grounded answer--evidence hypotheses and subsequently invokes an expensive VLM only for targeted verification. The core of our framework lies in the Action-based Candidate Evidence (ACE) module, which converts temporally localized actions into query-conditioned candidate answers and supporting evidence windows through lightweight LLM reasoning. We further introduce <span class="tp-sc">OpenTSUBench</span> (<span class="tp-sc">otb</span>), an open-ended benchmark designed to evaluate temporally grounded reasoning in real-world Activities of Daily Living (ADL) scenarios. Experiments show that <span class="tp-sc">TimeProVe</span> outperforms the strongest baseline on <span class="tp-sc">otb</span> by 7.3%, while reducing VLM calls by 75% and inference cost by 93%. Furthermore, without explicit temporal grounding training, <span class="tp-sc">TimeProVe</span> achieves competitive performance on Charades-STA, and reaches state-of-the-art results when enhanced with grounding VLMs.</p>
   </div>
 
   <div class="teaser-panel">
@@ -84,16 +83,11 @@ Long Video Question Answering (LVQA) requires identifying sparse, query-relevant
   </div>
 </div>
 
-  </div>
-</section>
-
-<section class="tp-section">
-  <div class="tp-section-inner">
-
-## TL;DR
-
-Use lightweight modules to propose candidate answers paired with temporally localized evidence windows. <br>
-Verify only the most promising candidates with a VLM, drastically reducing the number of expensive calls while preserving temporally grounded reasoning.
+<div class="tp-tldr">
+  <h2>TL;DR</h2>
+  <p>Use lightweight modules to propose candidate answers paired with temporally localized evidence windows.<br>
+  Verify only the most promising candidates with a VLM, drastically reducing the number of expensive calls while preserving temporally grounded reasoning.</p>
+</div>
 
   </div>
 </section>
@@ -101,7 +95,7 @@ Verify only the most promising candidates with a VLM, drastically reducing the n
 <section class="tp-section">
   <div class="tp-section-inner">
 
-## <span class="tp-sc">TimeProVe</span> framework
+<h2><span class="tp-sc">TimeProVe</span> framework</h2>
 
 <img src="{{ base_path }}/timeprove/main_arch.jpg" alt="TimeProVe framework overview" width="1400" height="682" loading="lazy" />
 <p class="figure-caption">ACE first builds an action timeline from the full video, then uses query-conditioned proposal generation and reranking to produce candidate answer-evidence hypotheses. A temporal verifier sends only the top short RGB clip to a VLM for confirmation, iterating to the next candidate only when needed, which preserves temporal grounding while substantially reducing expensive full-video inference.</p>
@@ -112,7 +106,7 @@ Verify only the most promising candidates with a VLM, drastically reducing the n
 <section class="tp-section">
   <div class="tp-section-inner">
 
-## <span class="tp-sc">OpenTSUBench</span> (<span class="tp-sc">otb</span>)
+<h2><span class="tp-sc">OpenTSUBench</span> (<span class="tp-sc">otb</span>)</h2>
 
 <img src="{{ base_path }}/timeprove/otb_benchmark.jpg" alt="OpenTSUBench (OTB) overview" width="1400" height="675" loading="lazy" />
 <p class="figure-caption"><span class="tp-sc">OpenTSUBench</span> is an open-ended, temporally grounded LVQA benchmark for real-world untrimmed ADL videos, where each question is paired with supporting temporal evidence. It includes diverse strata such as temporal positioning, long-horizon sparse evidence, object-centric actions, concurrent activities, and state transitions to evaluate both answer correctness and evidence localization.</p>
@@ -123,7 +117,7 @@ Verify only the most promising candidates with a VLM, drastically reducing the n
 <section class="tp-section">
   <div class="tp-section-inner">
 
-## Qualitative Examples
+<h2>Qualitative Examples</h2>
 
 <div class="demo-video-grid">
   <div class="demo-video-panel demo-video-panel--square">
@@ -155,7 +149,7 @@ Verify only the most promising candidates with a VLM, drastically reducing the n
 <section class="tp-section">
   <div class="tp-section-inner">
 
-## BibTeX
+<h2>BibTeX</h2>
 
 <div class="bibtex-block">
   <button type="button" class="bibtex-copy-btn" data-copy-target="timeprove-bibtex" aria-label="Copy BibTeX to clipboard">
