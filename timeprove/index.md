@@ -146,7 +146,7 @@ layout: timeprove
   </div>
 </section>
 
-<section class="tp-section">
+<section class="tp-section tp-section--plain">
   <div class="tp-section-inner">
 
 <h2>BibTeX</h2>
