@@ -62,6 +62,13 @@ layout: timeprove
         </a>
       </span>
     </div>
+
+<div class="teaser-video-panel">
+  <video class="timeprove-demo-video" width="1100" height="620" autoplay loop muted playsinline preload="auto">
+    <source src="{{ base_path }}/timeprove/assets/TimeProVe_demo_video_teaser.mp4" type="video/mp4">
+  </video>
+</div>
+
   </div>
 </div>
 
