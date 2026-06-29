@@ -48,7 +48,7 @@ I am particularly interested in *agentic video understanding*, where systems act
 ## Selected Publications
 
 <div class="pub">
-  <div class="thumb"><img src="{{ base_path }}/images/papers/timeprove.png" alt="TimeProVe" loading="lazy" onerror="this.closest('.thumb').style.display='none'"></div>
+  <div class="thumb"><video src="{{ base_path }}/timeprove/assets/TimeProVe_demo_video_teaser.mp4" autoplay loop muted playsinline preload="metadata" onerror="this.closest('.thumb').style.display='none'"></video></div>
   <div class="body">
     <div class="title"><a href="https://arxiv.org/abs/2606.20561"><span class="sc">TimeProVe</span>: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living</a></div>
     <div class="authors"><span class="me">Arkaprava Sinha</span>, Dominick Reilly, Siddharth Krishnan, Hieu Le, Srijan Das</div>
