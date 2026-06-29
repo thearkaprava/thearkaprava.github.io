@@ -1,0 +1,19 @@
+<div class="pub">
+  {% if post.video %}
+  <div class="thumb"><video src="{{ base_path }}/{{ post.video }}" autoplay loop muted playsinline preload="metadata" onerror="this.closest('.thumb').style.display='none'"></video></div>
+  {% elsif post.image %}
+  <div class="thumb"><img src="{{ base_path }}/{{ post.image }}" alt="" loading="lazy" onerror="this.closest('.thumb').style.display='none'"></div>
+  {% endif %}
+  <div class="body">
+    <div class="title">{% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>{% else %}{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}{% endif %}</div>
+    {% if post.authors %}<div class="authors">{{ post.authors }}</div>{% endif %}
+    {% if post.venue %}<div class="venue">{{ post.venue }}</div>{% endif %}
+    {% if post.excerpt %}<div class="desc">{{ post.excerpt }}</div>{% endif %}
+    <div class="links">
+      {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+      {% if post.codeurl %} / <a href="{{ post.codeurl }}">Code</a>{% endif %}
+      {% if post.websiteurl %} / <a href="{{ post.websiteurl }}">Website</a>{% endif %}
+      {% if post.slidesurl %} / <a href="{{ post.slidesurl }}">Slides</a>{% endif %}
+    </div>
+  </div>
+</div>

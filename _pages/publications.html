@@ -14,39 +14,21 @@ description: "Publications by Arkaprava Sinha."
 {% endif %}
 
 {% if site.publication_category %}
+  {% assign sorted_publications = site.publications | sort: 'pub_order' %}
   {% for category in site.publication_category %}
     {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
+    {% for post in sorted_publications %}
       {% if post.category != category[0] %}{% continue %}{% endif %}
       {% unless title_shown %}
 <h2>{{ category[1].title }}</h2>
         {% assign title_shown = true %}
       {% endunless %}
-      <div class="pub">
-        {% if post.image %}
-        <div class="thumb"><img src="{{ base_path }}/images/{{ post.image }}" alt=""></div>
-        {% endif %}
-        <div class="body">
-          <div class="title">{% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}</div>
-          {% if post.authors %}<div class="authors">{{ post.authors }}</div>{% endif %}
-          {% if post.venue %}<div class="venue">{{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</div>{% endif %}
-          <div class="links">
-            {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
-            {% if post.codeurl %} / <a href="{{ post.codeurl }}">Code</a>{% endif %}
-            {% if post.slidesurl %} / <a href="{{ post.slidesurl }}">Slides</a>{% endif %}
-          </div>
-        </div>
-      </div>
+      {% include publication-entry.html %}
     {% endfor %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
-      <div class="pub">
-        <div class="body">
-          <div class="title">{% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}</div>
-          {% if post.authors %}<div class="authors">{{ post.authors }}</div>{% endif %}
-          {% if post.venue %}<div class="venue">{{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</div>{% endif %}
-        </div>
-      </div>
+  {% assign sorted_publications = site.publications | sort: 'pub_order' %}
+  {% for post in sorted_publications %}
+    {% include publication-entry.html %}
   {% endfor %}
 {% endif %}
