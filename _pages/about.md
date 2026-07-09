@@ -107,7 +107,7 @@ I am particularly interested in *agentic video understanding*, where systems act
   <div class="body">
     <div class="title"><a href="https://arxiv.org/pdf/2511.05575">DiffSwap++: 3D Latent-Controlled Diffusion for Identity-Preserving Face Swapping</a></div>
     <div class="authors">Weston Bondurant, <span class="me">Arkaprava Sinha</span>, Hieu Le, Srijan Das, Stephanie Schuckers</div>
-    <div class="venue">Preprint</div>
+    <div class="venue">IEEE/IAPR INTERNATIONAL JOINT CONFERENCE ON BIOMETRICS (IJCB), 2026</div>
     <div class="desc">3D latent-controlled diffusion for identity-preserving face swapping.</div>
     <div class="links"><a href="https://arxiv.org/pdf/2511.05575">Paper</a></div>
   </div>
