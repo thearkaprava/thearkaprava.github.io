@@ -81,6 +81,17 @@ I am particularly interested in *agentic video understanding*, where systems act
 </div>
 
 <div class="pub">
+  <div class="thumb"><img src="{{ base_path }}/images/papers/diffswap.png" alt="DiffSwap++" loading="lazy" onerror="this.closest('.thumb').style.display='none'"></div>
+  <div class="body">
+    <div class="title"><a href="https://arxiv.org/pdf/2511.05575">DiffSwap++: 3D Latent-Controlled Diffusion for Identity-Preserving Face Swapping</a></div>
+    <div class="authors">Weston Bondurant, <span class="me">Arkaprava Sinha</span>, Hieu Le, Srijan Das, Stephanie Schuckers</div>
+    <div class="venue">IEEE/IAPR International Joint Conference on Biometrics (IJCB), 2026</div>
+    <div class="desc">3D latent-controlled diffusion for identity-preserving face swapping.</div>
+    <div class="links"><a href="https://arxiv.org/pdf/2511.05575">Paper</a></div>
+  </div>
+</div>
+
+<div class="pub">
   <div class="thumb"><img src="{{ base_path }}/images/papers/llavidal.png" alt="LLAVIDAL" loading="lazy" onerror="this.closest('.thumb').style.display='none'"></div>
   <div class="body">
     <div class="title"><a href="https://arxiv.org/abs/2406.09390">LLAVIDAL: A Large Language Vision Model for Daily Activities of Living</a></div>
@@ -99,17 +110,6 @@ I am particularly interested in *agentic video understanding*, where systems act
     <div class="venue">39th Annual AAAI Conference on Artificial Intelligence (AAAI), 2025</div>
     <div class="desc">Introduces 3D skeletons into the vision-language embedding space to enable effective zero-shot learning for activities of daily living.</div>
     <div class="links"><a href="https://arxiv.org/abs/2502.03459">Paper</a> / <a href="https://github.com/thearkaprava/SKI-Models">Code</a></div>
-  </div>
-</div>
-
-<div class="pub">
-  <div class="thumb"><img src="{{ base_path }}/images/papers/diffswap.png" alt="DiffSwap++" loading="lazy" onerror="this.closest('.thumb').style.display='none'"></div>
-  <div class="body">
-    <div class="title"><a href="https://arxiv.org/pdf/2511.05575">DiffSwap++: 3D Latent-Controlled Diffusion for Identity-Preserving Face Swapping</a></div>
-    <div class="authors">Weston Bondurant, <span class="me">Arkaprava Sinha</span>, Hieu Le, Srijan Das, Stephanie Schuckers</div>
-    <div class="venue">IEEE/IAPR International Joint Conference on Biometrics (IJCB), 2026</div>
-    <div class="desc">3D latent-controlled diffusion for identity-preserving face swapping.</div>
-    <div class="links"><a href="https://arxiv.org/pdf/2511.05575">Paper</a></div>
   </div>
 </div>
 
